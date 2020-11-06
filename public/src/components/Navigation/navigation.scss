@@ -1,1 +1,26 @@
 @import '../App/global.scss';
+
+.navigation__container {
+  font-family: $futura;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 90%;
+  padding: 1vh 3vw;
+}
+.navigation__container__left {
+  display: flex;
+  flex-direction: column;
+  color: $darkGrey;
+  text-transform: uppercase;
+
+  h1 {
+    font-weight: bold;
+    font-size: 80px;
+  }
+  h3 {
+    font-weight: 300;
+    font-size: 24px;
+    padding-left: 5px;
+  }
+}
