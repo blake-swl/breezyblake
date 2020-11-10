@@ -9,6 +9,7 @@
   padding: 1vh 3vw;
 }
 .navigation__container__left {
+  mix-blend-mode: difference;
   display: flex;
   flex-direction: column;
   color: $darkGrey;

@@ -17,9 +17,9 @@ const Menu = (props) => {
     <div className="menuOverlay__container" >
       <div className="menu__container">
         <div className="menu__container__header">Menu</div>
-        <ul>
+        <ul onClick={props.toggle}>
           <li><div className="menu__numbers">01</div><Link to="/" className="menu__item">Home</Link></li>
-          <li><div className="menu__numbers">02</div><Link to="/services" className="menu__item">Services</Link></li>
+          <li><div className="menu__numbers">02</div><Link to="/photography" className="menu__item">Photography</Link></li>
           <li><div className="menu__numbers">03</div><Link to="/works" className="menu__item">Works</Link></li>
           <li><div className="menu__numbers">04</div><Link to="/about" className="menu__item">About</Link></li>
           <li><div className="menu__numbers">05</div><Link to="/contact" className="menu__item">Contact</Link></li>
