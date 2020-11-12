@@ -11,7 +11,7 @@ const Landing = () => {
           <h1>UX/UI Designer</h1>
           <div className="line"></div>
           <h3>Cycling enthusiast and photographer</h3>
-          <Link className="landing__cta">See More</Link>
+          <Link className="landing__cta">View More</Link>
           <h4>BLAKE LEE</h4>
         </div>
         <div className="landing__container__right">
@@ -26,7 +26,7 @@ const Landing = () => {
 
         </div>
         <div className="col">
-          
+
         </div>
       </section>
     </div>
