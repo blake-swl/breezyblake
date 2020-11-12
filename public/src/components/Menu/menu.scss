@@ -16,6 +16,11 @@
     font-family: $futura;
   }
 
+  .menu__width {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+  }
   li {
     display: flex;
     width: fit-content;

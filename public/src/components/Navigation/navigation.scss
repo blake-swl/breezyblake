@@ -7,18 +7,20 @@
   z-index: 1;
   width: 90%;
   padding: 1vh 3vw;
+  // mix-blend-mode: difference;
+
+  // color: $white;
 }
 .navigation__container__left {
-  mix-blend-mode: difference;
   display: flex;
   flex-direction: column;
-  color: $darkGrey;
   text-transform: uppercase;
   .navigation__logo {
     text-decoration: none;
-    color: $darkGrey;
   }
   h1 {
+    color: $darkGrey;
+    mix-blend-mode: difference;
     font-weight: bold;
     font-size: 80px;
   }
@@ -26,6 +28,8 @@
     font-weight: 300;
     font-size: 24px;
     padding-left: 5px;
+    // mix-blend-mode: difference;
+
   }
 }
 // Hamburger
@@ -44,7 +48,6 @@
 }
 .hamburger {
   padding-right: 20px;
-
   outline: none;
   position: fixed;
   top: -5px;
@@ -64,7 +67,7 @@
   position: relative;
   width: 50%;
   height: 2px;
-  background: white;
+  background: $darkGrey;
   display: flex;
   justify-content: flex-end;
   align-items: center;

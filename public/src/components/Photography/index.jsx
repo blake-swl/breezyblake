@@ -51,19 +51,7 @@ const Photography = () => {
             <img src={malibu} alt=""/>
             <img src={bell} alt=""/>
           </div>
-          {/* <div className="col">
-            <img src={window} alt=""/>
-            <img src={skate} alt=""/>
-            <img src={street} alt=""/>
-            <img src={skate2} alt=""/>
-          </div> */}
         </div>
-        {/* <div className="photography__body__left">
-          <h2>Emotional Storytelling</h2>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
-        </div>
-        <div className="photography__body__right">
-        </div> */}
       </div>
     </div>
   )
