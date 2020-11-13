@@ -51,14 +51,14 @@
 }
 .landing__container__right {
   width: 60%;
-  background: url('../../../dist/assets/DSC07848.jpg') 50% 75%;
+  background: url('../../../dist/assets/DSC05094.jpg') 50% 0%;
   background-size: cover;
   height: 100vh;
   z-index: 1;
   .landing__container__overlay {
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, .1);
+    // background: rgba(255, 255, 255, .1);
   }
 }
 .landing__cta {
@@ -75,4 +75,12 @@
 .landing__about__container {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.landing__about__col {
+  flex: 33%;
+}
+.landing__about__hero {
+  width: 400px;
 }
