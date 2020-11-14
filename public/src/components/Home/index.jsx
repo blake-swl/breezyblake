@@ -18,7 +18,7 @@ const Landing = () => {
           <Link className="landing__cta">View More</Link>
         </div>
         <div className="landing__container__right">
-          {/* <h4>BLAKE LEE</h4> */}
+          <h4>BLAKE LEE</h4>
           <div className="landing__container__overlay"></div>
         </div>
       </div>

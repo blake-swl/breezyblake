@@ -12,10 +12,10 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul>
-        <li><a href=""><Behance/></a></li>
+        <li><a href="https://www.behance.net/blakelee3" target="_blank"><Behance/></a></li>
         <li><a href="https://www.instagram.com/breezyyblake/" target="_blank"><Instagram/></a></li>
-        <li><a href=""><Linkedin/></a></li>
-        <li><a href=""><Dribbble/></a></li>
+        <li><a href="https://www.linkedin.com/in/blake-lee-4bb35b121/" target="_blank"><Linkedin/></a></li>
+        <li><a href="https://dribbble.com/blakeswl" target="_blank"><Dribbble/></a></li>
       </ul>
     </div>
   )

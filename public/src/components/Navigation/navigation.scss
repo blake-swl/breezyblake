@@ -24,7 +24,28 @@
     mix-blend-mode: difference;
     // font-weight: bold;
     font-size: 40px;
+    text-decoration: none;
+    transition: all .2s cubic-bezier(1,.25,0,.75);
+    color: $white;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+        to right,
+        #218E79,
+        #218E79 50%,
+        $darkGrey 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+  
+    &:hover {
+      background-position: 0%;
+    }
   }
+  // h1:hover {
+  //   color: #218E79;
+  // }
   h3 {
     font-weight: 300;
     font-size: 20px;
@@ -111,5 +132,13 @@
   li {
     color: $darkGrey;
     margin: 3vh 0;
+  }
+  svg {
+    fill: #8d8d8d;
+    transition: .2s linear;
+  }
+  svg:hover {
+    // stroke: #218E79;
+    fill: #218E79;
   }
 }
