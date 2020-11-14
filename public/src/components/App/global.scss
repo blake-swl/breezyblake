@@ -11,17 +11,11 @@ $pink: #c01c74;
 
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
-$montserrat:'Montserrat', sans-serif;
-
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,500,700&display=swap');
-$rajdhani: 'Rajdhani', sans-serif;
-
-@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
-$hepta: 'Hepta Slab', serif;
-
 @import url("https://use.typekit.net/lgq8oyh.css");
 $futura: 'Futura PT', sans-serif;
+
+@import url("https://use.typekit.net/lgq8oyh.css");
+$backspace: 'backspacer-square', sans-serif;
 
 html, body {
   margin: 0;
