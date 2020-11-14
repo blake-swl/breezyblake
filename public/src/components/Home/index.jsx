@@ -7,6 +7,9 @@ import darkgrid from '../../../dist/assets/darkgrid.png';
 import lightgrid from '../../../dist/assets/lightgrid.png';
 import hero from '../../../dist/assets/DSC07848.jpg'
 
+import ramen from '../../../dist/assets/Nishi_04.jpg';
+import fd from '../../../dist/assets/fashiondomino.jpg';
+
 const Landing = () => {
   return (
     <div className="landing">
@@ -41,9 +44,39 @@ const Landing = () => {
             <ul>
               <li>Brand Strategy</li>
               <li>UX/UI Design</li>
+              <li>Graphic Design</li>
               <li>Web Development</li>
               <li>Product Photography</li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section className="landing__about__works">
+        <div className="landing__about__work">
+          <div className="landing__about__work__col">
+            <h2>Tako Poke & Ramen</h2>
+            <button className="button">View</button>
+          </div>
+          <div className="landing__about__work__col">
+            <img src={ramen} alt=""/>
+          </div>
+        </div>
+        <div className="landing__about__work">
+          <div className="landing__about__work__col">
+            <img src={fd} alt=""/>
+          </div>
+          <div className="landing__about__work__col">
+            <h2>Fashion Domino</h2>
+            <button className="button">View</button>
+          </div>
+        </div>
+        <div className="landing__about__work">
+          <div className="landing__about__work__col">
+            <h2>Fashion Domino</h2>
+            <button className="button">View</button>
+          </div>
+          <div className="landing__about__work__col">
+            <img src={fd} alt=""/>
           </div>
         </div>
       </section>

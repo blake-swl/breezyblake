@@ -7,7 +7,7 @@ $white: #FAFAFA;
 $offWhite: #D5D5D5;
 $black: #1F1F1F;
 $darkGrey: #313131;
-$pink: #c01c74;
+$green: #218E79;
 
 
 // Fonts
@@ -31,4 +31,21 @@ html, body {
 body {
   background: #F4F4F4;
 }
-// $landing: 
+
+.button {
+  font-family: $futura;
+  color: $darkGrey;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 5px 25px;
+  background: none;
+  border: 2px solid $darkGrey;
+  transition: .2s ease-in;
+
+  &:hover {
+    color: $white;
+    background: $green;
+    border: 2px solid $green;
+  }
+}
