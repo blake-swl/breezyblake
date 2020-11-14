@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './home.scss';
 
 // assets
-import darkgrid, { ReactComponent as DarkGrid } from '../../../dist/assets/blackgrid.svg';
+import darkgrid from '../../../dist/assets/darkgrid.png';
+import lightgrid from '../../../dist/assets/lightgrid.png';
 import hero from '../../../dist/assets/DSC07848.jpg'
 
 const Landing = () => {
@@ -23,9 +24,10 @@ const Landing = () => {
         </div>
       </div>
       <section className="landing__about__container">
-        <div className="landing__about__col">
-          <img src={hero} className="landing__about__hero" alt=""/>
-          {/* <img src={darkGrid} alt=""/> */}
+        <div className="landing__about__col hero">
+          <img src={hero} className="landing__about__hero" alt=""/>          
+          <img src={lightgrid} className="landing__about__border light" alt=""/>
+          <img src={darkgrid} className="landing__about__border dark" alt=""/>
         </div>
         <div className="landing__about__col">
           <div className="landing__about__copy">
@@ -35,7 +37,7 @@ const Landing = () => {
           </div>
         </div>
         <div className="landing__about__col">
-          <div className="landing__about__copy">
+          <div className="landing__about__copy skills">
             <ul>
               <li>Brand Strategy</li>
               <li>UX/UI Design</li>
