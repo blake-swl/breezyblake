@@ -93,11 +93,18 @@
   align-items: center;
 }
 .landing__about__copy {
-  width: 350px;
+  width: 500px;
 
   h2 {
-    font-size: 34px;
+    font-size: 50px;
     font-weight: 500;
+    margin-bottom: 2vh;
+  }
+  p {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #8D8D8D;
   }
 }
 .landing__about__hero {

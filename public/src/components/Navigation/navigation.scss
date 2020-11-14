@@ -98,3 +98,17 @@
 .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
 }
+.sidebar {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  left: 1vw;
+  justify-content: center;
+
+  li {
+    color: $darkGrey;
+    margin: 3vh 0;
+  }
+}
