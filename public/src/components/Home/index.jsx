@@ -59,7 +59,7 @@ const Landing = () => {
         <div className="landing__about__work">
           <div className="landing__about__work__col">
             <h2>Tako Poke & Ramen</h2>
-            <NavLink to='/tako' className="button">View</NavLink>
+            <Link to='/takopokeramen' className="button">View</Link>
           </div>
           <div className="landing__about__work__col">
             <img src={ramen} alt=""/>
