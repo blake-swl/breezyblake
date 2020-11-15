@@ -55,7 +55,6 @@
 .landing__container__right {
   width: 60%;
   background: url('../../../dist/assets/DSC05094.jpg') 50% 0%;
-  // background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   z-index: 0;
@@ -128,6 +127,7 @@
 .landing__about__hero {
   width: 400px;
   z-index: 1;
+  box-shadow: 0px 20px 40px rgba(0,0,0,.2);
 }
 .landing__about__border {
   z-index: 0;

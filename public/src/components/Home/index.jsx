@@ -1,14 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './home.scss';
 
 // assets
 import darkgrid from '../../../dist/assets/darkgrid.png';
 import lightgrid from '../../../dist/assets/lightgrid.png';
 import hero from '../../../dist/assets/DSC07848.jpg'
-
 import ramen from '../../../dist/assets/Nishi_04.jpg';
 import fd from '../../../dist/assets/fashiondomino.jpg';
+
+// componenets
+import Tako from '../CaseStudies/Tako.jsx'
+
+
 
 const Landing = () => {
   return (
@@ -55,7 +59,7 @@ const Landing = () => {
         <div className="landing__about__work">
           <div className="landing__about__work__col">
             <h2>Tako Poke & Ramen</h2>
-            <button className="button">View</button>
+            <NavLink to='/tako' className="button">View</NavLink>
           </div>
           <div className="landing__about__work__col">
             <img src={ramen} alt=""/>
