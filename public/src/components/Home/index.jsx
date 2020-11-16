@@ -56,7 +56,7 @@ const Landing = () => {
         </div>
       </section>
       <section className="landing__about__works">
-        <div className="landing__about__work">
+        {/* <div className="landing__about__work">
           <div className="landing__about__work__col">
             <h2>Tako Poke & Ramen</h2>
             <Link to='/takopokeramen' className="button">View</Link>
@@ -82,7 +82,7 @@ const Landing = () => {
           <div className="landing__about__work__col">
             <img src={fd} alt=""/>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   )

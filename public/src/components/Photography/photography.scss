@@ -20,13 +20,12 @@
 }
 .photography__banner {
   display: flex;
-  height: 100vh;
+  height: 80vh;
   background: url('../../../dist/assets/DSC05710.jpg') 50% 50%;
-  background-attachment: fixed;
   background-size: cover;
   align-items: flex-end;
   // justify-content: center;
-  font-size: 144px;
+  font-size: 42px;
   color: $white;
   font-weight: 400;
   text-transform: uppercase;
@@ -36,22 +35,22 @@
   }
 }
 .photography__body {
-  width: calc(100% - 6vw);
+  width: calc(100% - 10vw);
   display: flex;
-  padding: 3vh 3vw;
+  padding: 3vh 5vw;
   // text-align: center;
   align-items: center;
   flex-direction: column;
   h2 {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 500;
-    padding: 15vh 0 3vh;
+    padding: 5vh 0 3vh;
   }
   p {
-    width: 30%;
-    font-size: 24px;
+    // width: 30%;
+    font-size: 18px;
     font-weight: 300;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
     line-height: 1.4;
   }
 }
@@ -63,14 +62,40 @@
   padding: 0 4px;
 }
 .col {
-  flex: 25%;
-  // max-width: 25%;
-  padding: 0 4px;
+  flex: 100%;
+  max-width: 100%;
 }
 .col img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+}
+
+@media only screen and (min-width: 1080px) {
+  .photography__banner {
+    height: 100vh;
+    background-attachment: fixed;
+    font-size: 144px;
+  }
+
+  .photography__body {
+    width: calc(100% - 6vw);
+    padding: 3vh 3vw;
+    h2 {
+      padding: 15vh 0 3vh;
+      font-size: 42px;
+    }
+    p {
+      width: 30%;
+      font-size: 24px;
+      padding-bottom: 10vh;
+    }
+  }
+  .col {
+    flex: 25%;
+    // max-width: 25%;
+    padding: 0 4px;
+  }
 }
 // .photography__body__left {
 //   width: 30%;
