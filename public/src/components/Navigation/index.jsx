@@ -14,7 +14,8 @@ const Navigation = () => {
     <div className="navigation__container">
       <div className="navigation__container__left">
         <Link to="/" className="navigation__logo">
-          <h1>B. Lee</h1>
+          <h1 className="desktop">B. Lee</h1>
+          <h1 className="mobile">B.</h1>
         </Link>
         <h3>Los Angeles, CA</h3>
       </div>
