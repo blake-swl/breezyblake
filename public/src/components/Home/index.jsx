@@ -55,14 +55,22 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      <section className="landing__about__works">
+      <section className="landing__works">
+        <h2 className="header">Selected Works</h2>
+        <div className="landing__work">
+          <div className="landing__work__landscape ramen">
+            <img src={ramen} alt=""/>
+          </div>
+          <div className="landing__work__portrait">
+            <img src={fd} alt=""/>
+          </div>
+        </div>
         {/* <div className="landing__about__work">
           <div className="landing__about__work__col">
             <h2>Tako Poke & Ramen</h2>
             <Link to='/takopokeramen' className="button">View</Link>
           </div>
           <div className="landing__about__work__col">
-            <img src={ramen} alt=""/>
           </div>
         </div>
         <div className="landing__about__work">

@@ -117,7 +117,7 @@
 .sidebar {
   z-index: 1;
   position: fixed;
-  display: flex;
+  display: none;
   height: 100%;
   flex-direction: column;
   left: 1vw;
@@ -156,5 +156,8 @@
   }
   .mobile {
     display: none;
+  }
+  .sidebar {
+    display: flex;
   }
 }
