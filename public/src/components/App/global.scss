@@ -50,11 +50,14 @@ body {
   }
 }
 .header {
+  color: $darkGrey;
   font-size: 24px;
   font-weight: 500;
+  margin-bottom: 3vh;
 }
 @media only screen and (min-width: 1080px) {
   .header {
     font-size: 50px;
+    margin-bottom: 5vh;
   }
 }
