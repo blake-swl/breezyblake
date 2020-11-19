@@ -58,11 +58,15 @@ const Landing = () => {
       <section className="landing__works">
         <h2 className="header">Selected Case Studies</h2>
         <div className="landing__work">
-          <div className="landing__work__landscape">
+          <div className="landing__work__items">
             <img src={fd} alt=""/>
-          </div>
-          <div className="landing__work__portrait">
             <img src={ramen} alt=""/>
+          </div>
+        </div>
+        <div className="landing__work">
+          <div className="landing__work__items">
+            <img src={ramen} alt=""/>
+            <img src={fd} alt=""/>
           </div>
         </div>
         {/* <div className="landing__about__work">

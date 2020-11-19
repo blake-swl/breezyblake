@@ -150,38 +150,21 @@
   margin: 5vh auto;
 }
 .landing__work {
-  height: 100%;
+  width: 100%;
   display: flex;
-  * {
-    margin: 3px;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.landing__work__items {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+
+  img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
   }
-}
-.landing__work__landscape {
-  position: relative;
-  width: 60%; 
-  // &::after {
-  //   display: block;
-  //   content: '';
-  //   /* 16:9 aspect ratio */
-  //   padding-bottom: 56.25%;
-  // }
-  // img {
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   object-fit: cover;
-  // }
-}
-// .fd {
-//   background: url('../../../dist/assets/fashiondomino.jpg') 50% 50%;
-//   background-size: cover;
-// }
-.landing__work__portrait {
-  position: relative;
-  width: 40%;
-  // height: 100%; 
 }
 // .ramen {
 //   background: url('../../../dist/assets/Nishi_04.jpg') 50% 50%;
