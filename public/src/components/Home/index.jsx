@@ -26,10 +26,28 @@ const Landing = () => {
           <Link className="landing__cta">View More</Link>
         </div>
         <div className="landing__container__right">
-          <h4>BLAKE LEE</h4>
+          {/* <h4>BLAKE LEE</h4> */}
           <div className="landing__container__overlay"></div>
         </div>
       </div>
+      <section className="landing__works">
+        <h2 className="header">Selected Case Studies</h2>
+        <div className="landing__work">
+          <div className="landing__work__items left">
+            {/* <div className="landscape fd">
+              <h3>Fashion Domino</h3>
+            </div>
+            <div className="portrait tako">
+          </div> */}
+            <img src={fd} alt="" className="landscape"/>
+            <img src={ramen} alt="" className="portrait"/>
+          </div>
+          <div className="landing__work__items right">
+            <img src={ramen} alt="" className="portrait"/>
+            <img src={fd} alt="" className="landscape"/>
+          </div>
+        </div>
+      </section>
       <section className="landing__about__container">
         <div className="landing__about__col hero">
           <img src={hero} className="landing__about__hero" alt=""/>          
@@ -55,19 +73,14 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      <section className="landing__works">
-        <h2 className="header">Selected Case Studies</h2>
-        <div className="landing__work">
-          <div className="landing__work__items left">
-            <img src={fd} alt="" className="landscape"/>
-            <img src={ramen} alt="" className="portrait"/>
-          </div>
-          <div className="landing__work__items right">
-            <img src={ramen} alt="" className="portrait"/>
-            <img src={fd} alt="" className="landscape"/>
-          </div>
-        </div>
-        {/* <div className="landing__about__work">
+    </div>
+  )
+};
+
+export default Landing;
+
+
+      {/* <div className="landing__about__work">
           <div className="landing__about__work__col">
             <h2>Tako Poke & Ramen</h2>
             <Link to='/takopokeramen' className="button">View</Link>
@@ -93,9 +106,3 @@ const Landing = () => {
             <img src={fd} alt=""/>
           </div>
         </div> */}
-      </section>
-    </div>
-  )
-};
-
-export default Landing;

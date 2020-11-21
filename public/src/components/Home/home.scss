@@ -61,7 +61,7 @@
 }
 .landing__container__right {
   width: 100%;
-  background: url('../../../dist/assets/DSC05094.jpg') 50% 0%;
+  background: url('../../../dist/assets/DSC01248.jpg') 60% 50%;
   background-size: cover;
   height: 60vh;
   z-index: 0;
@@ -154,7 +154,6 @@
   display: flex;
   padding: 0 4px;
   position: relative;
-
 }
 .landing__work__items {
   padding: 0 4px;
@@ -174,16 +173,16 @@
   .portrait {
     width: 80%;
   }
-  // .landscape {
-  //   width: 60%;
-  // }
-  // .portrait {
-  //   width: 40%;
-  // }
 }
-// .ramen {
-//   background: url('../../../dist/assets/Nishi_04.jpg') 50% 50%;
-// }
+.case__title {
+  position: absolute;
+}
+.tako {
+  background: url('../../../dist/assets/Nishi_04.png') 50% 50%;
+}
+.fd {
+  background: url('../../../dist/assets/fashiondomino.jpg') 50% 50%;
+}
 // .landing__about__work__col {
 //   width: 50%;
 //   display: flex;
@@ -206,7 +205,7 @@
 @media only screen and (min-width: 1080px) {
   .landing__container {
     flex-direction: row;
-    margin-bottom: 0;
+    margin-bottom: 25vh;
   }
   .landing__container__left {
     width: 20%;
