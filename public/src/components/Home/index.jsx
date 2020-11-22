@@ -48,6 +48,12 @@ const Landing = () => {
           </div>
         </div>
       </section>
+      {/* <section className="landing__break">
+        <div className="landing__break__overlay">
+          <h3>Let's work together</h3>
+          <button className="button break">CONTACT</button>
+        </div>
+      </section> */}
       <section className="landing__about__container">
         <div className="landing__about__col hero">
           <img src={hero} className="landing__about__hero" alt=""/>          
@@ -71,6 +77,12 @@ const Landing = () => {
               <li>Product Photography</li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section className="landing__break">
+        <div className="landing__break__overlay">
+          <h3>Let's work together</h3>
+          <button className="button break">CONTACT</button>
         </div>
       </section>
     </div>

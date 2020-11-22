@@ -184,6 +184,27 @@
 .fd {
   background: url('../../../dist/assets/fashiondomino.jpg') 50% 50%;
 }
+.landing__break {
+  width: 100%;
+  background: url('../../../dist/assets/DSC02060-3.jpg');
+  background-position: 50% 60%;
+
+  &__overlay {
+    padding: 10vh 0;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    color: $white;
+    font-size: 6vw;
+    * {
+      margin: 0 1vw;
+    }
+  }
+  .break {
+    border: 2px solid $white;
+    color: $white;
+  }
+}
 // .landing__about__work__col {
 //   width: 50%;
 //   display: flex;
@@ -267,5 +288,13 @@
   }
   .landing__about__border {
     display: block;
+  }
+  .landing__break {
+    background-attachment: fixed;
+    background-position:  50% 60%;
+    &__overlay {
+      padding: 20vh 0;
+      font-size: 2.6vw;
+    }
   }
 }
