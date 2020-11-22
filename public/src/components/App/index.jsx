@@ -7,6 +7,7 @@ import Sidebar from '../Navigation/sidebar';
 import Home from '../Home';
 import Photography from '../Photography';
 import Tako from '../CaseStudies/Tako';
+import Footer from '../Footer';
 
 const routes = [
   {path: '/', Component: Home},
@@ -31,6 +32,7 @@ const App = () => {
               </Route>
             ))}
           </Switch>
+        <Footer />
     </>
   )
 }

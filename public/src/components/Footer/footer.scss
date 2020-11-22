@@ -1,0 +1,81 @@
+@import '../App/global.scss';
+
+.footer__container {
+  width: calc(100% - 3vw);
+  background: $black;
+  // display: flex;
+  align-items: center;
+  padding: 4vh 3vw;
+  // height: 20vh;
+  margin-top: 5vh;
+  color: $offWhite;
+  font-family: $futura;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  color: $offWhite;
+  font-family: $backspace;
+  font-size: 10vw;
+  text-decoration: none;
+  text-align: center;
+}
+.footer__col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vh 0;
+
+  * {
+    margin: 1vh 0;
+  }
+  &.social {
+    h5 {
+      // padding: 1vh 0;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      color: $offWhite;
+      margin: 0 3vw;
+    }
+    svg {
+      fill: #8d8d8d;
+      transition: .2s linear;
+    }
+    svg:hover {
+      fill: #218E79;
+    }
+  }
+}
+.footer__disclaimer {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1080px) {
+  .footer__container {
+    margin-top: 10vh;
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: row;
+  }
+  .footer__logo {
+    font-size: 2.6vw;
+  }
+  .footer__col {
+    &.social {
+      h5 {
+        // padding: 2vh;
+      }
+      li {
+        margin: 0 1vw;
+      }
+    }
+  }
+}

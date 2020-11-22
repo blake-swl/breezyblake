@@ -23,7 +23,7 @@ const Landing = () => {
           <h1>UX/UI Designer</h1>
           <div className="line"></div>
           <h3>Cycling enthusiast and photographer</h3>
-          <Link className="landing__cta">View More</Link>
+          <Link className="landing__cta button">View More</Link>
         </div>
         <div className="landing__container__right">
           {/* <h4>BLAKE LEE</h4> */}
