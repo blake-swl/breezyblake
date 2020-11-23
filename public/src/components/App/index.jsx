@@ -9,11 +9,13 @@ import Photography from '../Photography';
 import Tako from '../CaseStudies/Tako';
 import Works from '../Works';
 import Footer from '../Footer';
+import Contacts from '../Contacts/index.jsx';
 
 const routes = [
   {path: '/', Component: Home},
   {path: '/photography', Component: Photography},
   {path: '/works', name: 'Case Studies', Component: Works},
+  {path: '/contact', name: 'Contact', Component: Contacts},
   {path: '/takopokeramen', name: 'Tako Poke + Ramen', Component: Tako},
 ]
 // {path: '/case-studies', name: 'Case Studies', Component: CaseStudies},
