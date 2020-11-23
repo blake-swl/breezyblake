@@ -7,11 +7,13 @@ import Sidebar from '../Navigation/sidebar';
 import Home from '../Home';
 import Photography from '../Photography';
 import Tako from '../CaseStudies/Tako';
+import Works from '../Works';
 import Footer from '../Footer';
 
 const routes = [
   {path: '/', Component: Home},
   {path: '/photography', Component: Photography},
+  {path: '/works', name: 'Case Studies', Component: Works},
   {path: '/takopokeramen', name: 'Tako Poke + Ramen', Component: Tako},
 ]
 // {path: '/case-studies', name: 'Case Studies', Component: CaseStudies},

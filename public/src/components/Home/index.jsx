@@ -26,7 +26,7 @@ const Landing = () => {
           <Link className="landing__cta button">View More</Link>
         </div>
         <div className="landing__container__right">
-          {/* <h4>BLAKE LEE</h4> */}
+          {/* <h4>BLAKE <br/>LEE</h4> */}
           <div className="landing__container__overlay"></div>
         </div>
       </div>
@@ -47,13 +47,8 @@ const Landing = () => {
             <img src={fd} alt="" className="landscape"/>
           </div>
         </div>
+        {/* <Link className="button">See All</Link> */}
       </section>
-      {/* <section className="landing__break">
-        <div className="landing__break__overlay">
-          <h3>Let's work together</h3>
-          <button className="button break">CONTACT</button>
-        </div>
-      </section> */}
       <section className="landing__about__container">
         <div className="landing__about__col hero">
           <img src={hero} className="landing__about__hero" alt=""/>          
@@ -90,31 +85,3 @@ const Landing = () => {
 };
 
 export default Landing;
-
-
-      {/* <div className="landing__about__work">
-          <div className="landing__about__work__col">
-            <h2>Tako Poke & Ramen</h2>
-            <Link to='/takopokeramen' className="button">View</Link>
-          </div>
-          <div className="landing__about__work__col">
-          </div>
-        </div>
-        <div className="landing__about__work">
-          <div className="landing__about__work__col">
-            <img src={fd} alt=""/>
-          </div>
-          <div className="landing__about__work__col">
-            <h2>Fashion Domino</h2>
-            <button className="button">View</button>
-          </div>
-        </div>
-        <div className="landing__about__work">
-          <div className="landing__about__work__col">
-            <h2>Fashion Domino</h2>
-            <button className="button">View</button>
-          </div>
-          <div className="landing__about__work__col">
-            <img src={fd} alt=""/>
-          </div>
-        </div> */}
