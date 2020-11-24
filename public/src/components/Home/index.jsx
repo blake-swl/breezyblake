@@ -32,7 +32,6 @@ const Landing = () => {
           </Link>
         </div>
         <div className="landing__container__right">
-          {/* <h4>BLAKE <br/>LEE</h4> */}
           <div className="landing__container__overlay"></div>
         </div>
       </div>
@@ -40,20 +39,53 @@ const Landing = () => {
         <h2 className="header">Case Studies & Works</h2>
         <div className="landing__work">
           <div className="landing__work__items left">
-            {/* <div className="landscape fd">
-              <h3>Fashion Domino</h3>
-            </div>
-            <div className="portrait tako">
-          </div> */}
-            <img src={fd} alt="" className="landscape"/>
-            <img src={ramen} alt="" className="portrait"/>
+            <Link className="landscape">
+              <div className="overlay">
+                <div className="overlay__items">
+                  <div className="menu__numbers">01</div>
+                  <h4>Fashion Domino</h4>
+                </div>
+              </div>
+              <img src={fd} alt=""/>
+            </Link>
+            <Link to="takopokeramen" className="portrait">
+              <div className="overlay">
+                <div className="overlay__items">
+                  <div className="menu__numbers">01</div>
+                  <h4>Tako Poke & Ramen</h4>
+                </div>
+              </div>
+              <img src={ramen} alt=""/>
+            </Link>
           </div>
           <div className="landing__work__items right">
-            <img src={ramen} alt="" className="portrait"/>
-            <img src={fd} alt="" className="landscape"/>
+            <Link to="takopokeramen" className="portrait">
+              <div className="overlay">
+                <div className="overlay__items">
+                  <div className="menu__numbers">01</div>
+                  <h4>Tako Poke & Ramen</h4>
+                </div>
+              </div>              
+              <img src={ramen} alt=""/>
+            </Link>
+            <Link className="landscape">
+              <div className="overlay">
+                <div className="overlay__items">
+                  <div className="menu__numbers">01</div>
+                  <h4>Fashion Domino</h4>
+                </div>
+              </div>              
+              <img src={fd} alt=""/>
+            </Link>
           </div>
         </div>
-        {/* <Link className="button">See All</Link> */}
+        <Link className="cta" to="/works">            
+          <span>See All</span>
+          <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </Link>
       </section>
       <section className="landing__about__container">
         <div className="landing__about__col hero">
@@ -66,6 +98,13 @@ const Landing = () => {
             <h2>To delight with 
               <br/>design & technology </h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+            {/* <Link className="cta" to="/about">            
+              <span>Learn more about me</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </Link> */}
           </div>
         </div>
         <div className="landing__about__col">
@@ -78,6 +117,13 @@ const Landing = () => {
               <li>Product Photography</li>
             </ul>
           </div>
+          <Link className="cta" to="/about">            
+            <span>Learn more about me</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </Link>
         </div>
       </section>
       <section className="landing__break">

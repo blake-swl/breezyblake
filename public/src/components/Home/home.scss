@@ -149,37 +149,65 @@
   display: flex;
   padding: 0 4px;
   position: relative;
+  margin-bottom: 10vh;
 }
 .landing__work__items {
   padding: 0 4px;
   display: flex;
   flex-direction: column;
-  // position: absolute;
-  // width: 100%;
-
+  
   img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-
-  
+    position: relative;
+    z-index: 0;
+    // &::after {
+    //   content: "Hello"; // ::before and ::after both require content
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+    //   opacity: .7;
+    //   z-index: 1;
+    // }
   }
   
-  &.left {
+  &.left { 
     align-items: flex-end;
   }
   .portrait {
     width: 80%;
+    position: relative;
+  }
+  .landscape {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    width: 100%;
+    margin-top: 8px;
+    height: calc(100% - 8px);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: ease-in .2s;
+    
+    &:hover {
+      background: rgba($black, .3);
+    }
+    .overlay__items {
+      position: absolute;
+      bottom: 0;
+      color: $white;
+      font-size: 16px;
+    }
   }
 }
 .case__title {
   position: absolute;
-}
-.tako {
-  background: url('../../../dist/assets/Nishi_04.png') 50% 50%;
-}
-.fd {
-  background: url('../../../dist/assets/fashiondomino.jpg') 50% 50%;
 }
 .landing__break {
   width: 100%;
@@ -257,6 +285,7 @@
     }
     p {
       font-size: 24px;
+      margin-bottom: 10vh;
     }
     &.skills {
       font-size: 20px;
