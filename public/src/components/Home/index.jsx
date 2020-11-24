@@ -98,13 +98,13 @@ const Landing = () => {
             <h2>To delight with 
               <br/>design & technology </h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
-            {/* <Link className="cta" to="/about">            
+            <Link className="cta desktop" to="/about">            
               <span>Learn more about me</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
-            </Link> */}
+            </Link>
           </div>
         </div>
         <div className="landing__about__col">
@@ -117,7 +117,7 @@ const Landing = () => {
               <li>Product Photography</li>
             </ul>
           </div>
-          <Link className="cta" to="/about">            
+          <Link className="cta mobile" to="/about">            
             <span>Learn more about me</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>

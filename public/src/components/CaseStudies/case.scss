@@ -18,46 +18,46 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    height: 85vh;
-    width: 60%;
+    height: 80vh;
     padding: 5vh 30% 10vh 10%;
     background: rgba(0,0,0,.3);
   }
 
   h2 {
     font-weight: 500;
-    font-size: 1.736vw;
+    font-size: 6vw;
+    margin-bottom: 2vh;
   }
   span {
-    font-size: 4.514vw;
+    font-size: 8vw;
     font-weight: 600;
   }
 }
 .case-summary {
-  width: calc(100% - 20vw);
+  width: calc(100% - 10vw);
   margin: 0 auto;
   position: relative;
-  padding: 20vh 0;
+  padding: 5vh 0;
 }
 .case-summary-divider {
-  // width: 100%;
   display: flex;
+  flex-direction: column;
 
   .case-summary-left {
-    width: 50%;
-    font-size: 1.4vw;
+    width: 100%;
+    font-size: 4vw;
     // margin: 0 auto;
     p {
-      font-size: 1.8vw;
-      color: #d3d3d3;
+      font-size: 5vw;
+      color: #a3a3a3;
       font-weight: 460;
-      line-height: 3.3vw;
+      line-height: 7vw;
       margin: 0;
       padding-bottom: 5vh;
     }
     .case-mission {
       padding-top: 5vh;
-      line-height: 2.3vw;
+      line-height: 6vw;
     }
     .case-mission-header {
       // font-size: 1.4vw;
@@ -70,23 +70,22 @@
     }
   }
   .case-summary-right {
-    margin: 0 auto;
     h4 {
-      font-size: 1vw;
+      font-size: 3vw;
       color: #d3d3d3;
       margin: 0;
       font-weight: 400;
     }
     p {
       font-weight: 400;
-      margin: 3vh 0;
-      font-size: 1.52vw;
+      margin: 1.5vh 0;
+      font-size: 3.4vw;
     }
   }
 }
 .case-photo {
   width: 100%;
-  height: 100vh;
+  height: 30vh;
   
 }
 .first {
@@ -99,6 +98,54 @@
 .third {
   margin-top: 1vh;
 }  
+
+@media only screen and (min-width: 1080px) {
+  .case-banner {
+    background-attachment: fixed;
+
+    .case-banner-overlay {
+      height: 85vh;
+    }
+    h2 {
+      font-size: 1.736vw;
+    }
+    span {
+      font-size: 4.514vw;
+    }
+  }
+  .case-summary {
+    width: calc(100% - 20vw);
+    padding: 20vh 0;
+  }
+  .case-summary-divider {
+    flex-direction: row;
+    .case-summary-left {
+      width: 50%;
+      font-size: 1.4vw;
+      p {
+        font-size: 1.8vw;
+        line-height: 3.3vw;
+        color: #d3d3d3;
+      }
+      .case-mission {
+        line-height: 2.3vw;
+      }
+    }
+    .case-summary-right {
+      margin: 0 auto;
+      h4 {
+        font-size: 1vw;
+      }
+      p {
+        font-size: 1.52vw;
+        margin: 3vh 0;
+      }
+    }
+  }
+  .case-photo {
+    height: 100vh;
+  }
+}
 
 // @include media("<=phone") {
 //   .case-banner {

@@ -9,7 +9,7 @@ import menuItems from '../../../dist/assets/tako/menu-items.png';
 const Tako = () => {
   return (
     <section className="case-page">
-      <div className="case-banner" style={{background: `url(${tako}) 50% 50% fixed`, backgroundSize: 'cover'}}>
+      <div className="case-banner" style={{background: `url(${tako}) 50% 50%`, backgroundSize: 'cover'}}>
         <div className="case-banner-overlay">
           <h2>Tako Poke + Ramen</h2>
           <span>Bringing the mouth-water to your steps</span>
