@@ -9,10 +9,6 @@ import hero from '../../../dist/assets/DSC07848.jpg'
 import ramen from '../../../dist/assets/Nishi_04.png';
 import fd from '../../../dist/assets/fashiondomino.jpg';
 
-// componenets
-import Tako from '../CaseStudies/Tako.jsx'
-
-
 
 const Landing = () => {
   return (
@@ -51,7 +47,7 @@ const Landing = () => {
             <Link to="takopokeramen" className="portrait">
               <div className="overlay">
                 <div className="overlay__items">
-                  <div className="menu__numbers">01</div>
+                  <div className="menu__numbers">02</div>
                   <h4>Tako Poke & Ramen</h4>
                 </div>
               </div>
@@ -62,7 +58,7 @@ const Landing = () => {
             <Link to="takopokeramen" className="portrait">
               <div className="overlay">
                 <div className="overlay__items">
-                  <div className="menu__numbers">01</div>
+                  <div className="menu__numbers">03</div>
                   <h4>Tako Poke & Ramen</h4>
                 </div>
               </div>              
@@ -71,7 +67,7 @@ const Landing = () => {
             <Link className="landscape">
               <div className="overlay">
                 <div className="overlay__items">
-                  <div className="menu__numbers">01</div>
+                  <div className="menu__numbers">04</div>
                   <h4>Fashion Domino</h4>
                 </div>
               </div>              

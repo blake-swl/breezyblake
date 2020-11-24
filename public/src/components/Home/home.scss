@@ -182,16 +182,39 @@
     z-index: 1;
     top: 0;
     left: 0;
-    transition: ease-in .2s;
+    transition: all .4s cubic-bezier(1,.25,0,.75);
     
     &:hover {
       background: rgba($black, .3);
+
+      .menu__numbers {
+        left: -5%;
+        opacity: 1;
+      }
     }
     .overlay__items {
+      display: flex;
+      width: fit-content;
       position: absolute;
       bottom: 0;
       color: $white;
       font-size: 16px;
+      padding: 2vh 3vw;
+      font-weight: 500;
+
+      .menu__numbers {
+        font-weight: 500;
+        letter-spacing: 3px;
+        width: fit-content;
+        opacity: 0;
+        top: -25%;
+        left: 0;
+        position: absolute;
+      }
+      // &:hover {
+      //   padding: 0 6%;
+        
+      // }
     }
   }
 }
@@ -293,6 +316,13 @@
     &__overlay {
       padding: 20vh 0;
       font-size: 2.6vw;
+    }
+  }
+  .landing__work__items {
+    .overlay {
+      .overlay__items {
+        font-size: 3vw;
+      }
     }
   }
 }

@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 import './works.scss';
 
 // assets
-import darkgrid from '../../../dist/assets/darkgrid.png';
-import lightgrid from '../../../dist/assets/lightgrid.png';
-import hero from '../../../dist/assets/DSC07848.jpg'
-import ramen from '../../../dist/assets/Nishi_04.png';
+import ramen from '../../../dist/assets/Nishi_04.jpg';
 import fd from '../../../dist/assets/fashiondomino.jpg';
 
 const Works = () => {
@@ -15,7 +12,13 @@ const Works = () => {
       <div className="caseStudies">
         <div className="caseStudies__col">
           <h2>Tako Poke & Ramen</h2>
-          <Link to='/takopokeramen' className="button">View</Link>
+          <Link className="cta no__margin" to="/takopokeramen">
+            <span>View my work</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </Link>        
         </div>
         <div className="caseStudies__col">
           <img src={ramen} alt=""/>
@@ -27,13 +30,25 @@ const Works = () => {
         </div>
         <div className="caseStudies__col">
           <h2>Fashion Domino</h2>
-          <button className="button">View</button>
+          <Link className="cta no__margin" to="/takopokeramen">
+            <span>View my work</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </Link>         
         </div>
       </div>
       <div className="caseStudies">
         <div className="caseStudies__col">
           <h2>Fashion Domino</h2>
-          <button className="button">View</button>
+          <Link className="cta no__margin" to="/takopokeramen">
+            <span>View my work</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </Link>         
         </div>
         <div className="caseStudies__col">
           <img src={fd} alt=""/>

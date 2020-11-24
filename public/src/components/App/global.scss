@@ -96,7 +96,7 @@ body {
   &:hover {
     &:before {
       width: 100%;
-      background: rgba($green, .5);
+      background: rgba($green, 1);
     }
     svg {
       transform: translateX(0)
@@ -112,6 +112,9 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 3vh;
+}
+.no__margin {
+  margin-right: 0;
 }
 @media only screen and (min-width: 1080px) {
   .header {
