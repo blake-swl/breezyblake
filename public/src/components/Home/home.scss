@@ -47,14 +47,9 @@
   }
 
   .landing__cta {
-    text-decoration: none;
-    text-transform: uppercase;
     color: $darkGrey;
     margin-top: 20px;
-    border: 2px solid $darkGrey;
-    width: 100px;
-    padding: 5px 10px;
-    text-align: center;
+    // text-align: center;
     z-index: 1;
   }
 }
@@ -196,6 +191,7 @@
     background: rgba(0,0,0,.4);
     display: flex;
     justify-content: center;
+    align-items: center;
     color: $white;
     font-size: 6vw;
     * {
@@ -249,7 +245,7 @@
     }
   }
   .landing__about__hero {
-    width: 400px;
+    max-width: 400px;
     height: auto;
   }
   .landing__about__copy {

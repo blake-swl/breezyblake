@@ -23,7 +23,13 @@ const Landing = () => {
           <h1>UX/UI Designer</h1>
           <div className="line"></div>
           <h3>Cycling enthusiast and photographer</h3>
-          <Link className="landing__cta button">View More</Link>
+          <Link className="landing__cta cta">
+            <span>View my work</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </Link>
         </div>
         <div className="landing__container__right">
           {/* <h4>BLAKE <br/>LEE</h4> */}
@@ -31,7 +37,7 @@ const Landing = () => {
         </div>
       </div>
       <section className="landing__works">
-        <h2 className="header">Selected Case Studies</h2>
+        <h2 className="header">Case Studies & Works</h2>
         <div className="landing__work">
           <div className="landing__work__items left">
             {/* <div className="landscape fd">
@@ -77,7 +83,9 @@ const Landing = () => {
       <section className="landing__break">
         <div className="landing__break__overlay">
           <h3>Let's work together</h3>
-          <button className="button break">CONTACT</button>
+          <Link to="/contact">
+            <button className="button break">CONTACT</button>
+          </Link>
         </div>
       </section>
     </div>

@@ -20,14 +20,16 @@ const Contacts = () => {
         <p className="contact__copy">Always seeking opportunities to work on new & exciting projects.</p>
         <div className="email__container">
           <form className="contact-form" onSubmit={sendEmail}>
-            <input type="hidden" name="contact_number" placeholder="name"/>
-            {/* <label>Name</label> */}
-            <input type="text" name="user_name"  placeholder="name"/>
-            {/* <label>Email</label> */}
-            <input type="email" name="user_email" placeholder="email"/>
-            {/* <label>Message</label> */}
-            <textarea name="message" placeholder="message"/>
-            <input type="submit" className="button" value="Send" />
+            <input type="text" name="user_name"  placeholder="name" required/>
+            <input type="email" name="user_email" placeholder="email" required/>
+            <textarea name="message" placeholder="message" required/>
+            <div type="submit" className="cta">
+              <span>Send</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </div>
           </form>
         </div>
         <div className="contact__info">
