@@ -5,6 +5,8 @@ import './works.scss';
 // assets
 import ramen from '../../../dist/assets/Nishi_04.jpg';
 import fd from '../../../dist/assets/fashiondomino.jpg';
+import ride from '../../../dist/assets/ride.jpg';
+
 
 const Works = () => {
   return(
@@ -41,7 +43,7 @@ const Works = () => {
       </div>
       <div className="caseStudies">
         <div className="caseStudies__col">
-          <h2>Fashion Domino</h2>
+          <h2>Ride</h2>
           <Link className="cta no__margin" to="/takopokeramen">
             <span>View my work</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -51,7 +53,7 @@ const Works = () => {
           </Link>         
         </div>
         <div className="caseStudies__col">
-          <img src={fd} alt=""/>
+          <img src={ride} alt=""/>
         </div>
       </div>
     </div>

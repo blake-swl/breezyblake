@@ -8,6 +8,8 @@ import lightgrid from '../../../dist/assets/lightgrid.png';
 import hero from '../../../dist/assets/DSC07848.jpg'
 import ramen from '../../../dist/assets/Nishi_04.png';
 import fd from '../../../dist/assets/fashiondomino.jpg';
+// import ride from '../../../dist/assets/ride.jpg';
+
 
 
 const Landing = () => {
@@ -68,7 +70,7 @@ const Landing = () => {
               <div className="overlay">
                 <div className="overlay__items">
                   <div className="menu__numbers">04</div>
-                  <h4>Fashion Domino</h4>
+                  <h4>Ride</h4>
                 </div>
               </div>              
               <img src={fd} alt=""/>

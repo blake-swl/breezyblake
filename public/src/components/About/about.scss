@@ -1,0 +1,33 @@
+@import '../App/global.scss';
+
+.about__container {
+  width: 100%;
+  height: 100%;
+  font-family: $futura;
+  z-index: 0;
+  background: $white;
+}
+.about__banner {
+  display: flex;
+  height: 80vh;
+  background: url('../../../dist/assets/DSC01248.jpg') 50% 50%;
+  background-size: cover;
+  align-items: flex-end;
+  // justify-content: center;
+  font-size: 42px;
+  color: $white;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: italic;
+  h1 {
+    padding: 0 3vw 2vh;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .about__banner {
+    height: 100vh;
+    background-attachment: fixed;
+    font-size: 144px;
+  }
+}
