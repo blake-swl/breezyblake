@@ -10,7 +10,8 @@ $darkGrey: #313131;
 $green: #218E79;
 $lightgreen: #30caab;
 $body: #5d5d5d;
-
+$red: #d3667b;
+$silver: #c3c3c3;
 
 
 // Fonts
@@ -23,15 +24,12 @@ $backspace: 'backspacer-square', sans-serif;
 html, body {
   margin: 0;
   padding: 0;
-  z-index: 1;
+  z-index: 0;
   max-width: 100%;
   overflow-x: hidden;
-
-}
-
-body {
   background: #F4F4F4;
 }
+
 
 .button {
   font-family: $futura;
