@@ -15,7 +15,7 @@ const Works = () => {
         <div className="caseStudies__col">
           <h2>Tako Poke & Ramen</h2>
           <Link className="cta no__margin" to="/takopokeramen">
-            <span>View my work</span>
+            <span>Open Case Study</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>
               <polyline points="8 1 12 5 8 9"></polyline>

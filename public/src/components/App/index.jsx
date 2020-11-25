@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import ScrollToTop from '../Util/scroll.jsx';
+import { AnimatedRoute } from 'react-router-transition'
 
 import Navigation from '../Navigation';
 import Sidebar from '../Navigation/sidebar';
@@ -33,9 +34,15 @@ const App = () => {
         <Sidebar/>
           <Switch>
             {routes.map(({path, Component}) => (
-              <Route key={path} exact path={path}>
-                <Component />
-              </Route>
+              <AnimatedRoute key={path} exact path={path} component={Component}
+              atEnter={{ offset: -100 }}
+              atLeave={{ offset: -100 }}
+              atActive={{ offset: 0 }}
+              mapStyles={(styles) => ({
+                transform: `translateX(${styles.offset}%)`,
+              })}
+              />
+              
             ))}
           </Switch>
         <Footer />

@@ -56,6 +56,7 @@ html, body {
   transition: all .2s ease;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 
   &:before {
     content: "";
@@ -94,7 +95,7 @@ html, body {
   &:hover {
     &:before {
       width: 100%;
-      background: rgba($green, 1);
+      background: rgba($green, .5);
     }
     svg {
       transform: translateX(0)

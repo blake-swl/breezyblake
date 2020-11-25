@@ -31,21 +31,3 @@ const Navigation = () => {
   }
   
   export default Navigation;
-  // <div className="navigation__container">
-  //   <div className="navigation">
-  //     <div className="navigation__container__left">
-  //       <Link to="/" className="navigation__logo">
-  //         <h1 className="desktop">B. Lee</h1>
-  //         <h1 className="mobile">B.</h1>
-  //       </Link>
-  //     </div>
-  //     <div className="navigation__container__right">
-  //       <div className="navbar__menu">
-  //         <input type="checkbox" className="toggler" checked={checked} onChange={ _toggleCheckbox}/>
-  //         <div className="hamburger"><div></div></div>
-  //         { checked ? <Menu dropped={checked} toggle={_toggleCheckbox}/> :  <Menu dropped={checked}/>}
-  //       </div>
-  //     </div>
-
-  //   </div>
-  // </div>
