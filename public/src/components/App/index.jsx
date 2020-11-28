@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import ScrollToTop from '../Util/scroll.jsx';
-import { AnimatedRoute } from 'react-router-transition'
+import { AnimatedRoute, spring } from 'react-router-transition'
 
 import Navigation from '../Navigation';
 import Sidebar from '../Navigation/sidebar';
@@ -26,6 +26,32 @@ const routes = [
 // {path: '/about-us', name: 'About Us', Component: About},
 // {path: '/hike', name: 'Hike', Component: Hike}
 
+function glide(val) {
+  return spring(val, {
+    stiffness: 174,
+    damping: 24,
+  });
+}
+
+function slide(val) {
+  return spring(val, {
+    stiffness: 125,
+    damping: 16,
+  });
+}
+
+const pageTransitions = {
+  atEnter: {
+    offset: 100,
+  },
+  atLeave: {
+    offset: glide(-100),
+  },
+  atActive: {
+    offset: glide(0),
+  },
+};
+
 const App = () => {
   return(
     <>
@@ -35,17 +61,28 @@ const App = () => {
           <Switch>
             {routes.map(({path, Component}) => (
               <AnimatedRoute key={path} exact path={path} component={Component}
-              atEnter={{ offset: -100 }}
-              atLeave={{ offset: -100 }}
-              atActive={{ offset: 0 }}
-              mapStyles={(styles) => ({
-                transform: `translateX(${styles.offset}%)`,
-              })}
+              className="switch"
+              {...pageTransitions}
+              style={{transform: `translateX(100%)`}}
+              // mapStyles={(styles) => ({
+              //   transform: `translateX(${styles.offset}%)`,
+              // })}
+              // pathname={this.props.location.pathname}
+              // atEnter={{ opacity: 0 }}
+              // atLeave={{ opacity: 2 }}
+              // atActive={{ opacity: 1 }}
+              // mapStyles={styles => {
+              //   if(styles.opacity > 1){
+              //     return { display: 'none'}
+              //   }
+              //   return { opacity: styles.opacity}
+              // }}
+            
               />
               
             ))}
           </Switch>
-        <Footer />
+        {/* <Footer /> */}
     </>
   )
 }

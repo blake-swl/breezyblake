@@ -1,15 +1,14 @@
 @import '../App/global.scss';
 
 .footer__container {
+  position: absolute;
   width: calc(100% - 3vw);
   background: $black;
-  // display: flex;
   align-items: center;
   padding: 4vh 3vw;
-  // height: 20vh;
-  // margin-top: 5vh;
   color: $offWhite;
   font-family: $futura;
+  bottom: 0;
 }
 .footer {
   display: flex;
