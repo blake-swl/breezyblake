@@ -8,7 +8,7 @@ import lightgrid from '../../../dist/assets/lightgrid.png';
 import hero from '../../../dist/assets/DSC07848.jpg'
 import ramen from '../../../dist/assets/Nishi_04.png';
 import fd from '../../../dist/assets/fashiondomino.jpg';
-// import ride from '../../../dist/assets/ride.jpg';
+import ride from '../../../dist/assets/ride.jpg';
 
 
 
@@ -49,7 +49,7 @@ const Landing = () => {
             <Link to="takopokeramen" className="portrait">
               <div className="overlay">
                 <div className="overlay__items">
-                  <div className="menu__numbers">02</div>
+                  <div className="menu__numbers">03</div>
                   <h4>Tako Poke & Ramen</h4>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const Landing = () => {
             <Link to="takopokeramen" className="portrait">
               <div className="overlay">
                 <div className="overlay__items">
-                  <div className="menu__numbers">03</div>
+                  <div className="menu__numbers">02</div>
                   <h4>Tako Poke & Ramen</h4>
                 </div>
               </div>              
@@ -73,7 +73,7 @@ const Landing = () => {
                   <h4>Ride</h4>
                 </div>
               </div>              
-              <img src={fd} alt=""/>
+              <img src={ride} alt=""/>
             </Link>
           </div>
         </div>
@@ -95,7 +95,7 @@ const Landing = () => {
           <div className="landing__about__copy">
             <h2>To delight with 
               <br/>design & technology </h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+              <p>Hi, my name is Blake and I am a software engineer and experience designer based in Los Angeles, CA. Having worked in both sides of the field, I am a strong believer in the multidisciplinary approach of melding technical aspects of engineering and qualitative analyses of designing to create memorable digital experiences. </p>
             <Link className="cta desktop" to="/about">            
               <span>Learn more about me</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">

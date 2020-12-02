@@ -2,7 +2,7 @@
 
 
 .navbar__container {
-  z-index: 1;
+  z-index: 10;
   position: fixed;
   width: 90%;
   padding: 2vh 3vw;
@@ -12,7 +12,7 @@
   text-decoration: none;
   font-family: $futura;
   mix-blend-mode: difference;
-  color: $white;
+  color: $darkGrey;
   .navigation__logo {
     text-decoration: none;
     z-index: 15;
@@ -29,9 +29,9 @@
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(
         to right,
-        #d3667b,
-        #d3667b 50%,
-        $silver 50%);
+        $green,
+        $green 50%,
+        $darkGrey 50%);
     background-size: 200% 100%;
     background-position: 100%;
 
@@ -140,7 +140,7 @@
     transition: .2s linear;
   }
   svg:hover {
-    fill: $red;
+    fill: $green;
   }
 }
 .mobile {

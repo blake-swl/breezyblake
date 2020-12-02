@@ -21,16 +21,27 @@ $futura: 'Futura PT', sans-serif;
 @import url("https://use.typekit.net/lgq8oyh.css");
 $backspace: 'backspacer-square', sans-serif;
 
+// html, body {
+//   margin: 0;
+//   padding: 0;
+//   z-index: 0;
+//   max-width: 100%;
+//   overflow-x: hidden;
+//   background: #F4F4F4;
+// }
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  z-index: 0;
+  z-index: 1;
   max-width: 100%;
   overflow-x: hidden;
-  background: #F4F4F4;
-  height: 100%;
+
 }
 
+body {
+  background: #F4F4F4;
+}
 
 .button {
   font-family: $futura;
@@ -53,6 +64,7 @@ html, body {
   position: relative;
   height: calc("100vh - 50px");
   width: 100vw;
+
 
   & > div {
     z-index: 0;

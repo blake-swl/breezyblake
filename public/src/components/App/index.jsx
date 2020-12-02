@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import ScrollToTop from '../Util/scroll.jsx';
 import { AnimatedRoute, spring } from 'react-router-transition'
+import { CSSTransition } from 'react-transition-group';
 
 import Navigation from '../Navigation';
 import Sidebar from '../Navigation/sidebar';
@@ -26,33 +27,55 @@ const routes = [
 // {path: '/about-us', name: 'About Us', Component: About},
 // {path: '/hike', name: 'Hike', Component: Hike}
 
-function glide(val) {
-  return spring(val, {
-    stiffness: 174,
-    damping: 24,
-  });
-}
 
-function slide(val) {
-  return spring(val, {
-    stiffness: 125,
-    damping: 16,
-  });
-}
+// const App = () => {
 
-const pageTransitions = {
-  atEnter: {
-    offset: 100,
-  },
-  atLeave: {
-    offset: glide(-100),
-  },
-  atActive: {
-    offset: glide(0),
-  },
-};
-
+//   const [isVisible, setIsVisible] = useState(false);
+//   return(
+//     <>
+//       <ScrollToTop/>
+//         <Navigation />
+//         <Sidebar/>
+//           <Switch>
+//             <CSSTransition classNames="slide" timeout={300} in={true}>
+//               {routes.map(({path, Component}) => (
+//                 <Route key={path} exact path={path}>
+//                   <Component />
+//                 </Route>
+//               ))}
+//             </CSSTransition>
+//           </Switch>
+//         <Footer />
+//     </>
+//   )
+// }
+// export default App;
 const App = () => {
+  function glide(val) {
+    return spring(val, {
+      stiffness: 174,
+      damping: 24,
+    });
+  }
+  
+  function slide(val) {
+    return spring(val, {
+      stiffness: 125,
+      damping: 16,
+    });
+  }
+  
+  const pageTransitions = {
+    atEnter: {
+      offset: 100,
+    },
+    atLeave: {
+      offset: glide(-100),
+    },
+    atActive: {
+      offset: glide(0),
+    },
+  };
   return(
     <>
       <ScrollToTop/>
@@ -60,8 +83,11 @@ const App = () => {
         <Sidebar/>
           <Switch>
             {routes.map(({path, Component}) => (
+              // <Route exact path={path} key={path}>
+              //   {Component}
+              // </Route>
               <AnimatedRoute key={path} exact path={path} component={Component}
-              className="switch"
+              // className="switch"
               {...pageTransitions}
               style={{transform: `translateX(100%)`}}
               // mapStyles={(styles) => ({
@@ -82,7 +108,7 @@ const App = () => {
               
             ))}
           </Switch>
-        {/* <Footer /> */}
+        <Footer />
     </>
   )
 }
