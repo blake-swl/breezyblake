@@ -12,7 +12,7 @@
   text-decoration: none;
   font-family: $futura;
   mix-blend-mode: difference;
-  color: $darkGrey;
+  color: $silver;
   .navigation__logo {
     text-decoration: none;
     z-index: 15;
@@ -29,9 +29,9 @@
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(
         to right,
-        $green,
-        $green 50%,
-        $darkGrey 50%);
+        $red,
+        $red 50%,
+        $silver 50%);
     background-size: 200% 100%;
     background-position: 100%;
 
@@ -172,5 +172,24 @@
   }
   .sidebar {
     display: flex;
+  }
+  .hamburger {
+    width: 80px;
+    height: 80px;
+  }
+  .hamburger > div {
+    height: 4px;
+  }
+  .hamburger > div:before,
+  .hamburger > div:after {
+    height: 4px;
+    top: -12px;
+  }
+  .hamburger > div:after {
+    top: 12px;
+  }
+  .toggler {
+    height: 80px;
+    width: 80px;
   }
 }
