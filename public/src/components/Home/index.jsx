@@ -66,7 +66,7 @@ const Landing = () => {
               </div>              
               <img src={ramen} alt=""/>
             </Link>
-            <Link className="landscape">
+            <Link to="ride" className="landscape">
               <div className="overlay">
                 <div className="overlay__items">
                   <div className="menu__numbers">04</div>

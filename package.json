@@ -1,0 +1,11 @@
+{
+  "name": "breezyblake",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/blake-swl/breezyblake.git",
+  "author": "blake-swl <seulwoolee93@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd public && yarn run build"
+  }
+}

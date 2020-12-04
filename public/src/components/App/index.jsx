@@ -8,11 +8,12 @@ import Navigation from '../Navigation';
 import Sidebar from '../Navigation/sidebar';
 import Home from '../Home';
 import Photography from '../Photography';
-import Tako from '../CaseStudies/Tako';
 import Works from '../Works';
 import Footer from '../Footer';
 import Contacts from '../Contacts/index.jsx';
 import About from '../About';
+import Tako from '../CaseStudies/Tako';
+import Hike from '../CaseStudies/Hike'
 
 const routes = [
   {path: '/', Component: Home},
@@ -21,6 +22,7 @@ const routes = [
   {path: '/contact', name: 'Contact', Component: Contacts},
   {path: '/about', name: 'About', Component: About},
   {path: '/takopokeramen', name: 'Tako Poke + Ramen', Component: Tako},
+  {path: '/ride', name: 'Tako Poke + Ramen', Component: Hike},
 ]
 // {path: '/case-studies', name: 'Case Studies', Component: CaseStudies},
 // {path: '/services', name: 'Services', Component: Services},
