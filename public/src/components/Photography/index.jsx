@@ -3,20 +3,20 @@ import PhotoNav from './photoNav';
 import './photography.scss';
 
 // assets
-import skate from '../../../dist/assets/DSC07711.jpg';
-import dtla from '../../../dist/assets/DSC00877.jpg';
-import train from '../../../dist/assets/DSC09157.jpg';
-import window from '../../../dist/assets/DSC00784.jpg';
-import camp from '../../../dist/assets/DSC08955.jpg';
-import street from '../../../dist/assets/DSC09838.jpg';
-import station from '../../../dist/assets/DSC05139-2.jpg';
-import skate2 from '../../../dist/assets/DSC04833-2.jpg';
-import grimes from '../../../dist/assets/DSC05663-2.jpg';
-import malibu from '../../../dist/assets/DSC04964.jpg';
-import echopark from '../../../dist/assets/DSC00673-2.jpg';
-import park from '../../../dist/assets/DSC03305.jpg';
-import lightraildtla from '../../../dist/assets/DSC00859-2.jpg';
-import bell from '../../../dist/assets/DSC07848.jpg';
+const skate = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC07711.jpg';
+const dtla = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC00877.jpg';
+const train = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC09157.jpg';
+const window = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC00784.jpg';
+const camp = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC08955.jpg';
+const street = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC09838.jpg';
+const station = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC05139-2.jpg';
+const skate2 = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC04833-2.jpg';
+const grimes = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC05663-2.jpg';
+const malibu = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC04964.jpg';
+const echopark = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC00673-2.jpg';
+const park = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC03305.jpg';
+const lightraildtla = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC00859-2.jpg';
+const bell = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC07848.jpg';
 
 
 const Photography = () => {

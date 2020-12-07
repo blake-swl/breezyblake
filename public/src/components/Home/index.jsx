@@ -5,7 +5,7 @@ import './home.scss';
 // assets
 import darkgrid from '../../../dist/assets/darkgrid.png';
 import lightgrid from '../../../dist/assets/lightgrid.png';
-import hero from '../../../dist/assets/DSC07848.jpg'
+const hero ='https://breezyyblake.s3-us-west-1.amazonaws.com/DSC07848.jpg';
 import ramen from '../../../dist/assets/Nishi_04.png';
 import fd from '../../../dist/assets/fashiondomino.jpg';
 import ride from '../../../dist/assets/ride.jpg';
