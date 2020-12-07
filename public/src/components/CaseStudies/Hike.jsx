@@ -2,9 +2,9 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './case.scss';
 
-import banner from '../../../dist/assets/hike.png'
-import styleguide from '../../../dist/assets/Styleguide.png';
-import still from '../../../dist/assets/stills.png';
+const banner = 'https://breezyyblake.s3-us-west-1.amazonaws.com/hike.png'
+const styleguide = 'https://breezyyblake.s3-us-west-1.amazonaws.com/Styleguide.png';
+const still = 'https://breezyyblake.s3-us-west-1.amazonaws.com/stills.png';
 
 const Hike = () => {
   return (

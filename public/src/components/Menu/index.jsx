@@ -3,7 +3,7 @@ import './menu.scss';
 import { Link, NavLink } from "react-router-dom";
 import { TweenMax, Circ } from 'gsap';
 
-import skate from '../../../dist/assets/DSC04878.jpg';
+const skate = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC04878.jpg';
 
 const Menu = (props) => {
 
