@@ -9,6 +9,7 @@
   margin: 1em auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   font-family: $futura;
   mix-blend-mode: difference;
@@ -68,10 +69,10 @@
   z-index: 20;
   outline: none;
   position: fixed;
-  padding-right: 20px;
+  padding-right: 6px;
 }
 .hamburger {
-  padding-right: 20px;
+  padding-right: 6px;
   outline: none;
   position: fixed;
   top: -5px;
@@ -162,7 +163,8 @@
     transform: rotate(45deg);
   }
   .toggler, .hamburger {
-    margin: 3em auto;
+    margin: 2.3em auto;
+    padding-right: 20px;
   }
   .desktop {
     display: inline;

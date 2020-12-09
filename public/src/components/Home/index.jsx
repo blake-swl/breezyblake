@@ -30,7 +30,9 @@ const Landing = () => {
           </Link>
         </div>
         <div className="landing__container__right">
-          <div className="landing__container__overlay"></div>
+          <h4>BLAKE LEE</h4>
+          <div className="landing__container__overlay">
+          </div>
         </div>
       </div>
       <section className="landing__works">

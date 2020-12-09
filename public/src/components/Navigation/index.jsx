@@ -17,9 +17,10 @@ const Navigation = () => {
          <Link to="/" className="navigation__logo">
            <h1 className="desktop">B. Lee</h1>
            <h1 className="mobile">B.</h1>
-         </Link>
-         <h3>Los Angeles, CA</h3>
+          </Link>
+          <h3>Los Angeles, CA</h3>
          </div>
+        {/* <div className>MENU</div> */}
       </div>
       <div className="navbar__menu">
         <input type="checkbox" className="toggler" checked={checked} onChange={ _toggleCheckbox}/>
