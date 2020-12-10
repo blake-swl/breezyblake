@@ -1,10 +1,12 @@
 import React from 'react';
 import './contacts.scss';
-import emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
+
 
 const Contacts = () => {
   function sendEmail(e) {
     e.preventDefault();
+    
 
     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
       .then((result) => {
