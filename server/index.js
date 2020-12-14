@@ -2,8 +2,11 @@ import express from 'express';
 import path from 'path';
 import parser from 'body-parser';
 
+require('dotenv').config();
+
 const app = express();
-const PORT = 6969;
+const port = process.env.PORT || 3000;
+
 
 app.use(parser.json());
 app.use(parser.urlencoded({extended:true}));
@@ -13,4 +16,4 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/dist/index.html'))
 });
 
-app.listen(PORT, () => console.log(`Connected to PORT: ${PORT}`))
+app.listen(port, () => console.log(`Connected to PORT: ${port}`))

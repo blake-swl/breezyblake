@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contacts.scss';
 import{ init } from 'emailjs-com';
 
+// require('dotenv').config();
+
+const template = process.env.MAILJS_TEMPLATE;
+const user = process.env.MAILJS_USER;
+
+
 
 const Contacts = () => {
+
+  const [values, setValues] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
+  const handleChange = (name)=> (e) => {
+    console.log(name)
+    setValues({ ...values, [e.target.id]: e.target.value });
+  };
   function sendEmail(e) {
     e.preventDefault();
     
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('gmail', template, e.target, user)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -21,7 +37,7 @@ const Contacts = () => {
         <h1 className="header email">CONTACT</h1>
         <p className="contact__copy">Always seeking opportunities to work on new & exciting projects.</p>
         <div className="email__container">
-          <form className="contact-form" onSubmit={sendEmail}>
+          <form className="contact-form" onSubmit={sendEmail} onChange={{handleChange}}>
             <input type="text" name="user_name"  placeholder="name" required/>
             <input type="email" name="user_email" placeholder="email" required/>
             <textarea name="message" placeholder="message" required/>
