@@ -11,15 +11,15 @@ const user = process.env.MAILJS_USER;
 
 const Contacts = () => {
 
-  const [values, setValues] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
-  const handleChange = (name)=> (e) => {
-    console.log(name)
-    setValues({ ...values, [e.target.id]: e.target.value });
-  };
+  // const [values, setValues] = useState({
+  //   name: '',
+  //   email: '',
+  //   message: ''
+  // })
+  // const handleChange = (name)=> (e) => {
+  //   console.log(name)
+  //   setValues({ ...values, [e.target.id]: e.target.value });
+  // };
   function sendEmail(e) {
     e.preventDefault();
     
@@ -37,7 +37,7 @@ const Contacts = () => {
         <h1 className="header email">CONTACT</h1>
         <p className="contact__copy">Always seeking opportunities to work on new & exciting projects.</p>
         <div className="email__container">
-          <form className="contact-form" onSubmit={sendEmail} onChange={{handleChange}}>
+          <form className="contact-form" >
             <input type="text" name="user_name"  placeholder="name" required/>
             <input type="email" name="user_email" placeholder="email" required/>
             <textarea name="message" placeholder="message" required/>
