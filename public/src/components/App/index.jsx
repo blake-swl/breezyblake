@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import ScrollToTop from '../Util/scroll.jsx';
-import { AnimatedRoute, spring } from 'react-router-transition'
-import { CSSTransition } from 'react-transition-group';
+
 
 import Navigation from '../Navigation';
 import Sidebar from '../Navigation/sidebar';
@@ -31,13 +30,13 @@ const App = () => {
       <ScrollToTop/>
         <Navigation />
         <Sidebar/>
-          <Switch>
-            {routes.map(({path, Component}) => (
-              <Route exact path={path} key={path}>
-                {Component}
-              </Route>
-            ))}
-          </Switch>
+        {/* <Contacts /> */}
+        {/* <Home /> */}
+        <Switch>
+          {routes.map(({path, Component}) => (
+            <Route exact path={path} key={path} component={Component} />
+          ))}
+        </Switch>
         <Footer />
     </>
   )
