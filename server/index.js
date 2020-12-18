@@ -2,8 +2,6 @@ import express from 'express';
 import path from 'path';
 import parser from 'body-parser';
 
-require('dotenv').config();
-
 const app = express();
 const port = process.env.PORT || 3000;
 

@@ -1,6 +1,8 @@
 
 const path = require('path');
-// const Dotenv = require('dotenv-webpack');
+const Dotenv = require('dotenv-webpack');
+const webpack = require('webpack');
+
 
 module.exports = {
   entry: path.resolve('./src'),
@@ -37,14 +39,14 @@ module.exports = {
     ]
   },
   plugins: [
-    // new Dotenv({
-    //   path: './.env'
-    // }),
-    // new webpack.DefinePlugin({
-    //   DEBUG: process.env.NODE_ENV !== 'production',
-    //       'process.env': {
-    //           'NODE_ENV': JSON.stringify(process.env.NODE_ENV || "development"),
-    //           'API_KEY': JSON.stringify(process.env.API_KEY)}}),
+    new Dotenv({
+      path: './.env'
+    }),
+    new webpack.DefinePlugin({
+      DEBUG: process.env.NODE_ENV !== 'production',
+          'process.env': {
+              'NODE_ENV': JSON.stringify(process.env.NODE_ENV || "development"),
+              'REACT_APP': JSON.stringify(process.env.API_KEY)}}),
   ],
   resolve: {
     extensions: ['.js', '.jsx']
