@@ -11,7 +11,7 @@ const service = process.env.REACT_APP_MAILJS_SERVICE;
 
 
 const Contacts = () => {
-  console.log(process.env.PORT)
+  console.log(user, process.env.NODE_ENV)
     const [values, setValues] = useState({
       from_name: '',
       from_email: '',
