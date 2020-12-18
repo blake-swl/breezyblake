@@ -46,7 +46,7 @@ module.exports = {
       DEBUG: process.env.NODE_ENV !== 'production',
           'process.env': {
               'NODE_ENV': JSON.stringify(process.env.NODE_ENV || "development"),
-              'REACT_APP': JSON.stringify(process.env.API_KEY)}}),
+              'REACT_APP': JSON.stringify(process.env.REACT_APP)}}),
   ],
   resolve: {
     extensions: ['.js', '.jsx']

@@ -30,8 +30,6 @@ const App = () => {
       <ScrollToTop/>
         <Navigation />
         <Sidebar/>
-        {/* <Contacts /> */}
-        {/* <Home /> */}
         <Switch>
           {routes.map(({path, Component}) => (
             <Route exact path={path} key={path} component={Component} />
