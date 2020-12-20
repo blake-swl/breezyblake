@@ -9,9 +9,6 @@
     "build": "cd public && yarn run build"
   },
   "dependencies": {
-    "babel-register": "^6.26.0",
-    "dotenv": "^8.2.0",
-    "dotenv-webpack": "^6.0.0",
-    "webpack-dotenv-plugin": "^2.1.0"
+    "netlify-cli": "^2.69.10"
   }
 }
