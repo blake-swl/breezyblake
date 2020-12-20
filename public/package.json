@@ -31,7 +31,7 @@
   },
   "scripts": {
     "webpack": "webpack -w",
-    "build": "webpack -p 'process.env'",
+    "build": "webpack -p",
     "dev": "webpack --env.ENVIRONMENT=development --config webpack.config.dev.js"
   }
 }

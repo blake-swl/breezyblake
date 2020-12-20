@@ -5,6 +5,7 @@ import parser from 'body-parser';
 const app = express();
 const port = 6969;
 
+require("dotenv").config();
 
 app.use(parser.json());
 app.use(parser.urlencoded({extended:true}));
