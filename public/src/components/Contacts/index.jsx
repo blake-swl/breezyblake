@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import './contacts.scss';
 import emailjs from 'emailjs-com';
 
+// import { data } from '../../functions/emailjs';
 
-
-const template = process.env.REACT_APP_MAILJS_TEMPLATE;
-const user = process.env.REACT_APP_MAILJS_USER;
-const service = process.env.REACT_APP_MAILJS_SERVICE;
+// const template = process.env.REACT_APP_MAILJS_TEMPLATE;
+// const user = process.env.REACT_APP_MAILJS_USER;
+// const service = process.env.REACT_APP_MAILJS_SERVICE;
 
 
 
 const Contacts = () => {
-  console.log(user, process.env.NODE_ENV)
+  // console.log(data)
     const [values, setValues] = useState({
       from_name: '',
       from_email: '',

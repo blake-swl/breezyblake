@@ -44,7 +44,7 @@ const Works = () => {
       <div className="caseStudies">
         <div className="caseStudies__col">
           <h2>Ride</h2>
-          <Link className="cta no__margin" to="/takopokeramen">
+          <Link className="cta no__margin" to="/ride">
             <span>View my work</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>

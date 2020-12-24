@@ -11,13 +11,14 @@ const handler = async function (event) {
 
   // TODO: customize your URL and API keys set in the Netlify Dashboard
   // this is secret too, your frontend won't see this
-  const { API_SECRET = 'shiba' } = process.env
-  const URL = `https://dog.ceo/api/breed/${API_SECRET}/images`
+  const { REACT_APP_MAILJS_SERVICE, REACT_APP_MAILJS_TEMPLATE, REACT_APP_MAILJS_USER } = process.env
 
-  console.log('Constructed URL is ...', URL)
+
+  console.log('Constructed URL is ...', REACT_APP_MAILJS_SERVICE)
 
   try {
-    const { data } = await axios.get(URL)
+    const { data } = await axios.get(REACT_APP_MAILJS_SERVICE, REACT_APP_MAILJS_TEMPLATE, REACT_APP_MAILJS_USER)
+    console.log(data)
     // refer to axios docs for other methods if you need them
     // for example if you want to POST data:
     //    axios.post('/user', { firstName: 'Fred' })
