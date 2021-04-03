@@ -9,6 +9,7 @@ const hero ='https://breezyyblake.s3-us-west-1.amazonaws.com/DSC07848.jpg';
 import ramen from '../../../dist/assets/Nishi_04.png';
 import fd from '../../../dist/assets/fashiondomino.jpg';
 import ride from '../../../dist/assets/ride.jpg';
+import photo from '../../../dist/assets/DSC00386.jpg';
 
 
 
@@ -48,14 +49,14 @@ const Landing = () => {
               </div>
               <img src={fd} alt=""/>
             </Link>
-            <Link to="takopokeramen" className="portrait">
+            <Link to="/photography" className="portrait">
               <div className="overlay">
                 <div className="overlay__items">
                   <div className="menu__numbers">03</div>
-                  <h4>Tako Poke & Ramen</h4>
+                  <h4>Photography</h4>
                 </div>
               </div>
-              <img src={ramen} alt=""/>
+              <img src={photo} alt=""/>
             </Link>
           </div>
           <div className="landing__work__items right">

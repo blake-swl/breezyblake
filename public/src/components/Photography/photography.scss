@@ -21,7 +21,8 @@
 .photography__banner {
   display: flex;
   height: 80vh;
-  background: url(https://breezyyblake.s3-us-west-1.amazonaws.com/DSC05710.jpg) 50% 50%;
+  background: url(../../../dist/assets/DSC00602.jpg) 50% 50%;
+  // background: url(https://breezyyblake.s3-us-west-1.amazonaws.com/DSC05710.jpg) 50% 50%;
   background-size: cover;
   align-items: flex-end;
   // justify-content: center;
@@ -29,7 +30,7 @@
   color: $white;
   font-weight: 400;
   text-transform: uppercase;
-  font-style: italic;
+  // font-style: italic;
   h1 {
     padding: 0 3vw 2vh;
   }

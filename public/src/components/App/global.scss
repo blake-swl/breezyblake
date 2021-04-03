@@ -21,6 +21,9 @@ $futura: 'Futura PT', sans-serif;
 @import url("https://use.typekit.net/lgq8oyh.css");
 $backspace: 'backspacer-square', sans-serif;
 
+@import url("https://use.typekit.net/lgq8oyh.css");
+$freight: freight-big-pro, serif;
+
 // html, body {
 //   margin: 0;
 //   padding: 0;
@@ -131,8 +134,9 @@ body {
     transform: scale(.96);
   }
 }
+
 .header {
-  font-family: $futura;
+  // font-family: $freight;
   color: $darkGrey;
   font-size: 24px;
   font-weight: 500;
@@ -140,6 +144,9 @@ body {
 }
 .no__margin {
   margin-right: 0;
+}
+.freight {
+  // font-family: $freight;
 }
 @media only screen and (min-width: 1080px) {
   .header {
