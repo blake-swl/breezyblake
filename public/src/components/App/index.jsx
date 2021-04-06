@@ -13,6 +13,7 @@ import Contacts from '../Contacts/index.jsx';
 import About from '../About';
 import Tako from '../CaseStudies/Tako';
 import Hike from '../CaseStudies/Hike'
+import Temp from '../Temporary';
 
 const routes = [
   {path: '/', Component: Home},
@@ -27,7 +28,8 @@ const routes = [
 const App = () => {
   return(
     <>
-      <ScrollToTop/>
+      <Temp/>
+      {/* <ScrollToTop/>
         <Navigation />
         <Sidebar/>
         <Switch>
@@ -35,7 +37,7 @@ const App = () => {
             <Route exact path={path} key={path} component={Component} />
           ))}
         </Switch>
-        <Footer />
+        <Footer /> */}
     </>
   )
 }

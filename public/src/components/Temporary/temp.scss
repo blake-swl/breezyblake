@@ -1,0 +1,45 @@
+@import '../App/global.scss';
+
+.temp__container {
+  width: 100%;
+  height: 100vh;
+  background: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: $raj;
+    font-weight: 700;
+    font-size: 5vw;
+    color: #1F1F1F;  
+  }
+  .tagline {
+    margin: 2% 0;
+    text-align: center;
+  }
+  p {
+    font-family: $futura;
+    font-weight: 300;
+    font-size: 1.5vw;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    li {
+      margin: 1%;
+    }
+
+    svg {
+      fill: #1F1F1F;
+      transition: .2s linear;
+    }
+    svg:hover {
+      fill: $green;
+    }
+  }
+}
