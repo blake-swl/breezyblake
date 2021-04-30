@@ -3,7 +3,7 @@
 
 // Color Scheme
 $grey: #eeeeee;
-$white: #FAFAFA;
+$white: #FDFBF4;
 $offWhite: #D5D5D5;
 $black: #1F1F1F;
 $darkGrey: #313131;
@@ -27,6 +27,15 @@ $freight: freight-big-pro, serif;
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:500,700&display=swap');
 $raj: 'Rajdhani', sans-serif;
 
+@font-face {
+  font-family: 'sen';
+  src: url('../../../dist/fonts/Sen-Regular.otf');
+}
+@font-face {
+  font-family: 'leiko';
+  src: url('../../../dist/fonts/Leiko-Regular.otf');
+}
+
 // html, body {
 //   margin: 0;
 //   padding: 0;
@@ -49,22 +58,49 @@ body {
   // background: #F4F4F4;
 }
 
-.button {
-  font-family: $futura;
-  color: $darkGrey;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 5px 25px;
-  background: none;
-  border: 2px solid $darkGrey;
-  transition: .2s ease-in;
+// .button {
+//   font-family: $futura;
+//   color: $darkGrey;
+//   font-size: 14px;
+//   font-weight: 500;
+//   text-transform: uppercase;
+//   padding: 5px 25px;
+//   background: none;
+//   border: 2px solid $darkGrey;
+//   transition: .2s ease-in;
 
+//   &:hover {
+//     color: $white;
+//     background: $green;
+//     border: 2px solid $green;
+//   }
+// }
+.roundbutton {
+  // margin: 0 5%;
+  border: 1px solid $darkGrey;
+  text-align: center;
+  border-radius: 20px;
+  width: 80px;
+  padding: 10px 20px;
+  font-family: "sen";
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.15);
+  transition: ease-in .2s;
+}
+.black {
+  background: $darkGrey;
+  color: $white;
   &:hover {
     color: $white;
     background: $green;
-    border: 2px solid $green;
+    border: 1px solid $green;
   }
+}
+.white {
+  background: $white;
+  color: $black;
 }
 .switch {
   position: relative;
@@ -139,7 +175,7 @@ body {
 }
 
 .header {
-  // font-family: $freight;
+  font-family: "leiko";
   color: $darkGrey;
   font-size: 24px;
   font-weight: 500;
@@ -148,12 +184,13 @@ body {
 .no__margin {
   margin-right: 0;
 }
-.freight {
-  // font-family: $freight;
+p {
+  font-family: 'sen';
 }
+
 @media only screen and (min-width: 1080px) {
   .header {
-    font-size: 2.6vw;
+    font-size: 2.4vw;
     margin-bottom: 10vh;
   }
   .cta {

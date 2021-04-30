@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  font-family: $futura;
+  font-family: "sen";
   mix-blend-mode: difference;
   color: $silver;
   .navigation__logo {
@@ -30,9 +30,9 @@
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(
         to right,
-        $red,
-        $red 50%,
-        $silver 50%);
+        $green,
+        $green 50%,
+        $darkGrey 50%);
     background-size: 200% 100%;
     background-position: 100%;
 
@@ -56,7 +56,9 @@
   text-decoration: none;
 }
 
-
+.nav__items__container {
+  display: none;
+}
 // Hamburger
 .toggler {
   cursor: pointer;
@@ -152,11 +154,45 @@
 }
 @media only screen and (min-width: 1080px) {
   .navbar__container {
-    padding: 1vh 3vw;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    opacity: .8;
+    mix-blend-mode: normal;
+    color: $darkGrey;
+    background: $white;
+    border-bottom: 2px solid $darkGrey;
+    padding: 2vh 5vw;
     width: calc(100% - 10vw);
-    margin: 2em auto;
+    margin: 0 auto;
+    color: $darkGrey;
+
     h3 {
       visibility: visible;
+    }
+  }
+  .navbar__menu {
+    display: none;
+  }
+  .nav__items__container {
+    display: flex;
+    font-family: "sen";
+    text-transform: uppercase;
+    // width: 100%;
+    ul {
+      display: flex;
+    }
+    li {
+      margin: 0 1vw;
+      padding: 0 1vw;
+    }
+    .nav__item {
+      color: $darkGrey;
+      text-decoration: none;
+      transition: ease-in .2s;
+
+      &:hover {
+        color: $green;
+      }
     }
   }
   .toggler:hover + .hamburger > div {

@@ -5,10 +5,7 @@
   width: 100%;
   height: 100%;
   color: $darkGrey;
-  font-family: $futura;
   background-color: $white;
-  // position: absolute;
-  // position: relative;
   z-index: 0;
 }
 .landing__container {
@@ -27,6 +24,7 @@
   position: relative;
   
   h1 {
+    font-family: "leiko";
     font-weight: 6vw;
     white-space: nowrap;
     font-size: 8vw;
@@ -40,6 +38,7 @@
     margin-left: -10%;
   }
   h3 {
+    font-family: "sen";
     padding-top: 20px;
     white-space: nowrap;
     line-height: 1.3;
@@ -47,17 +46,16 @@
     color: #8D8D8D;
     z-index: 1;
   }
-
-  .landing__cta {
-    color: $darkGrey;
-    margin-top: 20px;
-    // text-align: center;
-    z-index: 1;
-  }
+}
+.button__container {
+  margin-top: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
 .landing__container__right {
   width: 100%;
-  background: url(https://breezyyblake.s3-us-west-1.amazonaws.com/DSC05094.jpg) 50% 0%;
+  background: url('../../../dist/cover.jpg') 50% 50%;
   background-size: cover;
   height: 60vh;
   z-index: 0;
@@ -79,8 +77,20 @@
 .landing__about__container {
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
   margin: 10vh 0;
+}
+.landing__about__border {
+  width: 90%;
+  // height: 50vh;
+  border: 3px solid $body;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 30px 60px rgba(0,0,0,.15);
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
 }
 .landing__about__col {
   display: flex;
@@ -90,7 +100,7 @@
   padding: 0 3vw;
 
   &.hero {
-    padding: 0;
+    padding: 20px 0 0 0;
     // padding-left: 1vw;
     // align-items: center;
   }
@@ -107,12 +117,14 @@
     line-height: 1.2;
   }
   p {
-    font-size: 16px;
+    font-family: "sen";
+    font-size: 14px;
     line-height: 1.2;
     font-weight: 300;
     color: #8D8D8D;
   }
   &.skills {
+    font-family: "sen";
     font-size: 14px;
     font-weight: 500;
     color: $body;
@@ -130,19 +142,19 @@
   z-index: 1;
   box-shadow: 0px 20px 40px rgba(0,0,0,.2);
 }
-.landing__about__border {
-  z-index: 0;
-  position: absolute;
-  display: none;
-  &.dark {
-    right: 35px;
-    bottom: 175px;
-  }
-  &.light {
-    left: 60px;
-    top: 185px;
-  }
-}
+// .landing__about__border {
+//   z-index: 0;
+//   position: absolute;
+//   display: none;
+//   &.dark {
+//     right: 35px;
+//     bottom: 175px;
+//   }
+//   &.light {
+//     left: 60px;
+//     top: 185px;
+//   }
+// }
 .landing__works {
   width: calc(100% - 10vw);
   text-align: center;
@@ -240,6 +252,7 @@
   background-position: 50% 60%;
 
   &__overlay {
+    font-family: "sen";
     padding: 10vh 0;
     background: rgba(0,0,0,.4);
     display: flex;
@@ -263,66 +276,68 @@
     margin-bottom: 25vh;
   }
   .landing__container__left {
-    width: 20%;
-    padding-left: 20%;
-    padding-right: 2%;
+    width: 45%;
     margin: 0;
+    justify-content: center;
 
+  }
+  .button__container {
+    width: 100%;
+  }
+  .landing__container__margin {
+    margin: 0 auto;
     h1 {
-      font-size: 2.8vw;
+      font-size: 2.4vw;
     }
     h3 {
-      font-size: 1.3vw;
+      font-size: 1.1vw;
     }
   }
   .landing__container__right {
-    width: 60%;
+    width: 55%;
     height: 100vh;
 
     h4 {
       font-size: 200px;
     }
   }
-  .landing__about__container {
-    height: 100vh;
-    flex-wrap: wrap;
+
+  .landing__about__border {
+    width: 70%;
     flex-direction: row;
-    width: calc(100% - 6vw);
-    padding: 0 3vw;
+    padding: 5% 5%;
+    // justify-content: space-evenly;
+    justify-content: center;
   }
   .landing__about__col {
-    flex: 25%;
+    width: 30%;
+    padding: 0 1.5%;
+    margin: 0 auto;
     align-items: center;
-    padding: 0;
-    &.hero {
-      padding-left: 1vw;
-    }
+    // padding: 0;
+
   }
   .landing__about__hero {
     max-width: 400px;
     height: auto;
   }
   .landing__about__copy {
-    width: 450px;
-
+    padding: 0;
+    // width: 450px;
+    
     h2 {
-      font-size: 50px;
+      // font-size: 50px;
+      font-size: 2vw;
       margin-top: 0;
     }
     p {
-      font-size: 1.2vw;      
+      font-size: .9vw;   
+      line-height: 1.6;   
       margin-bottom: 10vh;
     }
     &.skills {
       font-size: 1.2vw;
-
-      * {
-        margin: 30px 0;
-      }
     }
-  }
-  .landing__about__border {
-    display: block;
   }
   .landing__break {
     background-attachment: fixed;

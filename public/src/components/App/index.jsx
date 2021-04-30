@@ -28,8 +28,8 @@ const routes = [
 const App = () => {
   return(
     <>
-      <Temp/>
-      {/* <ScrollToTop/>
+      {/* <Temp/> */}
+      <ScrollToTop/>
         <Navigation />
         <Sidebar/>
         <Switch>
@@ -37,7 +37,7 @@ const App = () => {
             <Route exact path={path} key={path} component={Component} />
           ))}
         </Switch>
-        <Footer /> */}
+        <Footer />
     </>
   )
 }

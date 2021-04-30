@@ -26,6 +26,10 @@ module.exports = {
         
       },
       {
+      test: /\.(png|woff|woff2|eot|ttf|otf)$/, 
+      loader: 'url-loader?limit=100000' 
+      },
+      {
         test: /\.(gif|png|jpe?g|pdf|mp4|ttf)$/i,
         loader: 'file-loader',
         options: {

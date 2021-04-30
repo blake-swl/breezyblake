@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './navigation.scss';
 
 import Menu from '../Menu';
@@ -19,8 +19,17 @@ const Navigation = () => {
            <h1 className="mobile">B.</h1>
           </Link>
           <h3>Los Angeles, CA</h3>
-         </div>
+        </div>
         {/* <div className>MENU</div> */}
+      <div className="nav__items__container">
+        <ul>
+          <li><NavLink to="/" className="nav__item">Home</NavLink></li>
+          <li><NavLink to="/works" className="nav__item">Case Studies</NavLink></li>
+          <li><NavLink to="/photography" className="nav__item">Photography</NavLink></li>
+          <li><Link to="/about" className="nav__item">About</Link></li>
+          <li><Link to="/contact" className="roundbutton black">Let's Talk</Link></li>
+        </ul>
+      </div>
       </div>
       <div className="navbar__menu">
         <input type="checkbox" className="toggler" checked={checked} onChange={ _toggleCheckbox}/>
