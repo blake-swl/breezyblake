@@ -24,8 +24,8 @@ const Navigation = () => {
       <div className="nav__items__container">
         <ul>
           <li><NavLink to="/" className="nav__item">Home</NavLink></li>
-          <li><NavLink to="/works" className="nav__item">Case Studies</NavLink></li>
           <li><NavLink to="/photography" className="nav__item">Photography</NavLink></li>
+          <li><NavLink to="/works" className="nav__item">Case Studies</NavLink></li>
           <li><Link to="/about" className="nav__item">About</Link></li>
           <li><Link to="/contact" className="roundbutton black">Let's Talk</Link></li>
         </ul>
@@ -35,6 +35,9 @@ const Navigation = () => {
         <input type="checkbox" className="toggler" checked={checked} onChange={ _toggleCheckbox}/>
         <div className="hamburger"><div></div></div>
         { checked ? <Menu dropped={checked} toggle={_toggleCheckbox}/> :  <Menu dropped={checked}/>}
+      </div>
+      <div className="mouse">
+        <div className="mouse__text">scroll</div>
       </div>
     </div>
     )

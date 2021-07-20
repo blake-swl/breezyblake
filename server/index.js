@@ -3,7 +3,7 @@ import path from 'path';
 import parser from 'body-parser';
 
 const app = express();
-const port = 6969;
+const port = 6970;
 
 require("dotenv").config();
 

@@ -3,15 +3,26 @@ import { Link, NavLink } from 'react-router-dom';
 import './home.scss';
 
 // assets
-import darkgrid from '../../../dist/assets/darkgrid.png';
-import lightgrid from '../../../dist/assets/lightgrid.png';
 const hero ='https://breezyyblake.s3-us-west-1.amazonaws.com/DSC07848.jpg';
-import ramen from '../../../dist/assets/Nishi_04.png';
-import fd from '../../../dist/assets/fashiondomino.jpg';
+import reel from '../../../dist/assets/DSC00602 copy.jpg';
+import ramen from '../../../dist/banners/tako.jpg';
+import fd from '../../../dist/banners/fashiondomino.jpg';
 import ride from '../../../dist/assets/ride.jpg';
-import photo from '../../../dist/assets/DSC00386.jpg';
 
-
+const works = [
+  {
+    title: "Tako Poke + Ramen",
+    image: ramen,
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    link: "/takopokeramen"
+  },
+  {
+    title: "Fashion Domino",
+    image: fd,
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    link: ""
+  }
+]
 
 const Landing = () => {
   return (
@@ -19,16 +30,16 @@ const Landing = () => {
       <div className="landing__container">
         <div className="landing__container__left">
           <div className="landing__container__margin">
-            <h1>Software Engineer</h1>
             <h1>UX/UI Designer</h1>
+            <h1>Photographer</h1>
             <div className="line"></div>
-            <h3>Cycling enthusiast and photographer</h3>
+            <h3>Cycling enthusiast and web developer</h3>
             <div className="button__container">
-              <Link className="roundbutton black">
+              <Link className="roundbutton black space" to="/works">
                 Works
               </Link>
-              <Link className="roundbutton white">
-                Contact
+              <Link className="roundbutton white" to="/photography">
+                Photography
               </Link>
             </div>
 
@@ -46,32 +57,21 @@ const Landing = () => {
           </div>
         </div>
       </div>
+      <section className="landing__about__reel">
+        <h2 className="header">To delight with 
+          <br/>design & technology </h2>
+          <div className="landing__reel__container">
+            <img src={reel} alt="" />
+          </div>
+      </section>
+      <section className="landing__works">
+        <h2 className="header">Selected Works</h2>
+        <div className="landing__works__container">
+          <div className="landing__works__main">
 
-      <section className="landing__about__container">
-        <div className="landing__about__border">
-          <div className="landing__about__col hero">
-            <img src={hero} className="landing__about__hero" alt=""/>          
           </div>
-          <div className="landing__about__col">
-            <div className="landing__about__copy">
-              <h2 className="header">To delight with 
-                <br/>design & technology </h2>
-                <p>Hi, my name is Blake and I am a software engineer and experience designer based in Los Angeles, CA. Having worked in both sides of the field, I am a strong believer in the multidisciplinary approach of melding technical aspects of engineering and qualitative analyses of designing to create memorable digital experiences. </p>
-                <Link className="roundbutton black desktop">
-                  Contact
-                </Link>
-            </div>
-          </div>
-          <div className="landing__about__col">
-            <div className="landing__about__copy skills">
-              <ul>
-                <li>Brand Strategy</li>
-                <li>Photography</li>
-                <li>UX/UI Design</li>
-                <li>Graphic Design</li>
-                <li>Web Development</li>
-              </ul>
-            </div>
+          <div className="landing__works__sub">
+            
           </div>
         </div>
       </section>

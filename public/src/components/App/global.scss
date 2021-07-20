@@ -3,7 +3,8 @@
 
 // Color Scheme
 $grey: #eeeeee;
-$white: #FDFBF4;
+// $white: #FDFBF4;
+$white: #fcfbfa;
 $offWhite: #D5D5D5;
 $black: #1F1F1F;
 $darkGrey: #313131;
@@ -101,6 +102,12 @@ body {
 .white {
   background: $white;
   color: $black;
+  &:hover {
+    // color: $white;
+    // background: $da;
+    border: 1px solid $white;
+    // box-shadow: 0 5px 10px rgba(33, 142, 121, .3);
+  }
 }
 .switch {
   position: relative;

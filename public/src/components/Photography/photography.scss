@@ -20,8 +20,8 @@
 }
 .photography__banner {
   display: flex;
-  height: 80vh;
-  background: url(../../../dist/assets/DSC00602.jpg) 50% 50%;
+  height: 40vh;
+  background: url(../../../dist/photobanner.jpg) 50% 50%;
   // background: url(https://breezyyblake.s3-us-west-1.amazonaws.com/DSC05710.jpg) 50% 50%;
   background-size: cover;
   align-items: flex-end;
@@ -54,22 +54,34 @@
     line-height: 1.4;
   }
 }
-
 .row {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  // padding: 0 4px;
 }
 .col {
-  flex: 48%;
-  margin: 0 1%;
-  // max-width: 100%;
+  display: flex;
+  // flex: 33%;
+  width: 33%;
+  
+  img {
+    margin: 8px 4px 0 4px;
+    width: calc(100% - 8px);
+    margin-top: 8px;
+    vertical-align: middle;
+  }
 }
-.col img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
+// .row {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// .col {
+//   flex: 48%;
+//   // max-width: 100%;
+// }
+// .col img {
+//   width: 100%;
+// }
 
 @media only screen and (min-width: 1080px) {
   .photography__banner {
@@ -77,7 +89,7 @@
     background-attachment: fixed;
     font-size: 144px;
   }
-
+  
   .photography__body {
     width: calc(100% - 6vw);
     padding: 3vh 3vw;
@@ -92,7 +104,6 @@
     }
   }
   .col {
-    flex: 25%;
     padding: 0 4px;
     margin: 0;
   }

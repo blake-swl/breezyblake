@@ -3,47 +3,124 @@
 
 .caseStudies__container {
   width: 100%;
-  display: flex;
-  font-family: $futura;
-  flex-direction: column;
-  color: $darkGrey;
+  height: 100vh;
+  z-index: 3;
   background: $white;
+  position: absolute;
+  scroll-behavior: smooth;
 }
-.caseStudies {
+.caseStudy {
   display: flex;
+  flex-direction: column;
 }
-.caseStudies__col {
-  width: 50%;
+.caseStudy__banner {
+  // background: url(../../../dist/banners/tako.jpg) 50% 50% no-repeat;
+  // background-size: cover;
+  width: 100%;
+  height: 50vh;
+  img {
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+    // height: 100%;
+  }
+}
+.caseStudy__description {
+  padding: 10% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  h2 {
-    font-size: 6vw;
-    font-weight: 500;
-    margin-bottom: 3vh;
-  }
-  
-  img {
-    object-fit: cover;
-    height: 30vh;
-    width: 100%;
-    // height: 100%;
+  // text-align: center;
+
+  p {
+    font-family: "sen";
+    font-weight: 400;
+    color: $darkGrey;
   }
 
+  * {
+    margin: 5%;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
-  .caseStudies__col {
-    width: 50%;
-    height: auto;
+  // .caseStudies__container {
+  //   position: absolute;
+  // }
+  .caseStudy {
+    flex-direction: row;
+    position: relative;
+  }
+  .caseStudy__banner {
+    width: 50vw;
+    height: 100vh;
+     img {
+       height: 100%;
+       object-fit: cover;
+     }
+  }
+  .header.works {
+    margin-bottom: 0;
+  }
+  .caseStudy__description {
+    width: 50vw;
+    padding: 0;
+    align-items: flex-start;
+    * {
+      margin: 3% 5%;
+    }
+    p {
+      width: 60%;
 
-    h2 {
-      font-size: 3vw;
     }
-    img {
-      height: auto;
-    }
+  
   }
 }
+
+// .caseStudies__container {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   color: $darkGrey;
+//   background: $white;
+// }
+// .caseStudies {
+//   display: flex;
+// }
+// .caseStudies__col {
+//   width: 50%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+  
+//   h2 {
+//     font-family: "leiko";
+//     font-size: 6vw;
+//     font-weight: 500;
+//     margin-bottom: 3vh;
+//   }
+  
+//   img {
+//     object-fit: cover;
+//     height: 30vh;
+//     width: 100%;
+//     // height: 100%;
+//   }
+
+// }
+
+// @media only screen and (min-width: 1080px) {
+//   .caseStudies__col {
+//     width: 50%;
+//     height: auto;
+
+//     h2 {
+//       font-size: 3vw;
+//     }
+//     img {
+//       height: auto;
+//     }
+//   }
+// }
