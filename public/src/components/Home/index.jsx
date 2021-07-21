@@ -5,7 +5,7 @@ import './home.scss';
 // assets
 const hero ='https://breezyyblake.s3-us-west-1.amazonaws.com/DSC07848.jpg';
 import reel from '../../../dist/assets/DSC00602 copy.jpg';
-import ramen from '../../../dist/banners/tako.jpg';
+import ramen from '../../../dist/assets/works/tako.jpg';
 import fd from '../../../dist/banners/fashiondomino.jpg';
 import ride from '../../../dist/assets/ride.jpg';
 
@@ -25,6 +25,7 @@ const works = [
 ]
 
 const Landing = () => {
+  
   return (
     <div className="landing">
       <div className="landing__container">
@@ -68,10 +69,23 @@ const Landing = () => {
         <h2 className="header">Selected Works</h2>
         <div className="landing__works__container">
           <div className="landing__works__main">
-
+            <img src={ramen} className="works__hero" alt="" />
+            <div className="landing__works__copy">
+              <h3>Tako Poke Ramen</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              </p>
+              <Link className="roundbutton black space" to="/takopokeramen">
+                See Project
+              </Link>
+            </div>
           </div>
           <div className="landing__works__sub">
-            
+            <div className="landing__works__sub__container">
+              <Link to="/takopokeramen">
+                {/* <img src={ramen} alt="" /> */}
+              </Link>
+            </div>
           </div>
         </div>
       </section>
