@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './home.scss';
-
+import { scrollContainer } from '../Util/smoothscroll';
 // assets
 const hero ='https://breezyyblake.s3-us-west-1.amazonaws.com/DSC07848.jpg';
 import reel from '../../../dist/assets/DSC00602 copy.jpg';
 import ramen from '../../../dist/assets/works/tako.jpg';
-import fd from '../../../dist/banners/fashiondomino.jpg';
-import ride from '../../../dist/assets/ride.jpg';
+import fd from '../../../dist/assets/works/fashiondomino.jpg';
+import nike from '../../../dist/assets/works/nikemockup.jpg'
+import salonshoot from '../../../dist/assets/works/hair.jpg';
+
 
 const works = [
   {
@@ -17,17 +19,30 @@ const works = [
     link: "/takopokeramen"
   },
   {
+    title: "Nike Brand",
+    image: nike,
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    link: ""
+  },
+  {
+    title: "Oribe Hair Competition",
+    image: salonshoot,
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    link: ""
+  },
+  {
     title: "Fashion Domino",
     image: fd,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
     link: ""
-  }
+  },
 ]
 
 const Landing = () => {
+
   
   return (
-    <div className="landing">
+    <div className="landing" >
       <div className="landing__container">
         <div className="landing__container__left">
           <div className="landing__container__margin">
@@ -43,15 +58,7 @@ const Landing = () => {
                 Photography
               </Link>
             </div>
-
           </div>
-          {/* <Link className="landing__cta cta">
-            <span>View my work</span>
-            <svg width="13px" height="10px" viewBox="0 0 13 10">
-              <path d="M1,5 L11,5"></path>
-              <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
-          </Link> */}
         </div>
         <div className="landing__container__right">
           <div className="landing__container__overlay">
@@ -68,25 +75,20 @@ const Landing = () => {
       <section className="landing__works">
         <h2 className="header">Selected Works</h2>
         <div className="landing__works__container">
-          <div className="landing__works__main">
-            <img src={ramen} className="works__hero" alt="" />
-            <div className="landing__works__copy">
-              <h3>Tako Poke Ramen</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-              </p>
-              <Link className="roundbutton black space" to="/takopokeramen">
-                See Project
-              </Link>
-            </div>
-          </div>
-          <div className="landing__works__sub">
-            <div className="landing__works__sub__container">
-              <Link to="/takopokeramen">
-                {/* <img src={ramen} alt="" /> */}
-              </Link>
-            </div>
-          </div>
+            {
+              works.map(work => {
+               return <div className="landing__works__main">
+                 <img src={work.image} className="works__hero" />
+                 <div className="landing__works__copy">
+                   <h3>{work.title}</h3>
+                   <p>{work.description}</p>
+                   <Link className="roundbutton black space" to={`${work.link}`}>
+                    View Project
+                   </Link>
+                 </div>
+              </div>
+              })
+            }
         </div>
       </section>
       <section className="landing__break">
@@ -103,55 +105,10 @@ const Landing = () => {
 
 export default Landing;
 
-      {/* <section className="landing__works">
-        <h2 className="header">Case Studies & Works</h2>
-        <div className="landing__work">
-          <div className="landing__work__items left">
-            <Link className="landscape">
-              <div className="overlay">
-                <div className="overlay__items">
-                  <div className="menu__numbers">01</div>
-                  <h4>Fashion Domino</h4>
-                </div>
-              </div>
-              <img src={fd} alt=""/>
-            </Link>
-            <Link to="/photography" className="portrait">
-              <div className="overlay">
-                <div className="overlay__items">
-                  <div className="menu__numbers">03</div>
-                  <h4>Photography</h4>
-                </div>
-              </div>
-              <img src={photo} alt=""/>
-            </Link>
-          </div>
-          <div className="landing__work__items right">
-            <Link to="takopokeramen" className="portrait">
-              <div className="overlay">
-                <div className="overlay__items">
-                  <div className="menu__numbers">02</div>
-                  <h4>Tako Poke & Ramen</h4>
-                </div>
-              </div>              
-              <img src={ramen} alt=""/>
-            </Link>
-            <Link to="ride" className="landscape">
-              <div className="overlay">
-                <div className="overlay__items">
-                  <div className="menu__numbers">04</div>
-                  <h4>Ride</h4>
-                </div>
-              </div>              
-              <img src={ride} alt=""/>
-            </Link>
-          </div>
-        </div>
-        <Link className="cta" to="/works">            
-          <span>See All</span>
-          <svg width="13px" height="10px" viewBox="0 0 13 10">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </Link>
-      </section> */}
+          {/* <Link className="landing__cta cta">
+            <span>View my work</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </Link> */}

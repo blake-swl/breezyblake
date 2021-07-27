@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import ScrollToTop from '../Util/scroll.jsx';
+import SmoothScroll from '../Util/smoothscroll';
+import './global.scss'
 
 
 import Navigation from '../Navigation';
@@ -26,19 +28,24 @@ const routes = [
 ]
 
 const App = () => {
+
+
   return(
-    <>
+    <div className="app">
       {/* <Temp/> */}
       <ScrollToTop/>
-        <Navigation />
-        <Sidebar/>
+      <Navigation />
+      <Sidebar/>
+      {/* <SmoothScroll> */}
         <Switch>
-          {routes.map(({path, Component}) => (
-            <Route exact path={path} key={path} component={Component} />
-          ))}
+            {routes.map(({path, Component}) => (
+              <Route exact path={path} key={path} component={Component} />
+              ))}
         </Switch>
         <Footer />
-    </>
+      {/* </SmoothScroll> */}
+
+    </div>
   )
 }
 export default App;
