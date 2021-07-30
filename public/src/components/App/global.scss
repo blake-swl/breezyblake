@@ -47,14 +47,18 @@ $raj: 'Rajdhani', sans-serif;
 // }
 html, body {
   // height: 100%;
+  // margin: 0;
+  // padding: 0;
+  // z-index: 1;
+  // max-width: 100%;
+  // overflow-x: hidden;
+  // height: 100%;
+  // overscroll-behavior-y: none;
   margin: 0;
   padding: 0;
   z-index: 1;
   max-width: 100%;
   overflow-x: hidden;
-  height: 100%;
-  overscroll-behavior-y: none;
-  // scroll-behavior: smooth;
 }
 
 // .app {

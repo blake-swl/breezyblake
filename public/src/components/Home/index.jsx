@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './home.scss';
 import { scrollContainer } from '../Util/smoothscroll';
@@ -16,30 +16,36 @@ const works = [
     title: "Tako Poke + Ramen",
     image: ramen,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-    link: "/takopokeramen"
+    link: "/takopokeramen",
+    toggle: false
   },
   {
     title: "Nike Brand",
     image: nike,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-    link: ""
+    link: "",
+    toggle: true
   },
   {
     title: "Oribe Hair Competition",
     image: salonshoot,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-    link: ""
+    link: "",
+    toggle: false
   },
   {
     title: "Fashion Domino",
     image: fd,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-    link: ""
+    link: "",
+    toggle: false
   },
 ]
 
 const Landing = () => {
+  const [toggle, setToggle] = useState(false);
 
+  console.log(toggle)
   
   return (
     <div className="landing" >
@@ -78,7 +84,7 @@ const Landing = () => {
             {
               works.map(work => {
                return <div className="landing__works__main">
-                 <img src={work.image} className="works__hero" />
+                 <img src={work.image} className="works__hero" onClick={() => setToggle(!!true)}/>
                  <div className="landing__works__copy">
                    <h3>{work.title}</h3>
                    <p>{work.description}</p>

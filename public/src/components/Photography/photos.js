@@ -1,4 +1,8 @@
 // assets
+
+import sophie__roof1 from '../../../dist/assets/photography/DSC04326.jpg'
+import sophie__roof2 from '../../../dist/assets/photography/DSC04478.jpg'
+import sophie__roof3 from '../../../dist/assets/photography/DSC04569.jpg'
 import chelsea__rooftop1 from '../../../dist/assets/photography/DSC01484.jpg'
 import chelsea__rooftop2 from '../../../dist/assets/photography/DSC01372.jpg'
 import chelsea__rooftop3 from '../../../dist/assets/photography/DSC01308.jpg'
@@ -28,6 +32,10 @@ import quise__beach3 from '../../../dist/assets/photography/DSC01363.jpg'
 const photos = [ 
   {
     portraits: [
+      {
+        name: "sophie__roof",
+        links: [sophie__roof1, sophie__roof2, sophie__roof3],
+      },
       {
         name: "jamie__dam",
         links: [jamie__dam1, jamie__dam2, jamie__dam3],
