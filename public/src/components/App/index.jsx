@@ -9,7 +9,7 @@ import Navigation from '../Navigation';
 import Sidebar from '../Navigation/sidebar';
 import Home from '../Home';
 import Photography from '../Photography';
-import Works from '../Works';
+// import Works from '../Works';
 import Footer from '../Footer';
 import Contacts from '../Contacts/index.jsx';
 import About from '../About';
@@ -20,7 +20,7 @@ import Temp from '../Temporary';
 const routes = [
   {path: '/', Component: Home},
   {path: '/photography', Component: Photography},
-  {path: '/works', name: 'Case Studies', Component: Works},
+  // {path: '/works', name: 'Case Studies', Component: Works},
   {path: '/contact', name: 'Contact', Component: Contacts},
   {path: '/about', name: 'About', Component: About},
   {path: '/takopokeramen', name: 'Tako Poke + Ramen', Component: Tako},
