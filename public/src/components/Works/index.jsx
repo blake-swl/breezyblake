@@ -14,12 +14,12 @@ const works = [
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
     link: "/takopokeramen"
   },
-  {
-    title: "Fashion Domino",
-    image: fd,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-    link: ""
-  }
+  // {
+  //   title: "Fashion Domino",
+  //   image: fd,
+  //   description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+  //   link: ""
+  // }
 ]
 
 
