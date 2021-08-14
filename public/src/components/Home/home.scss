@@ -113,7 +113,16 @@
   align-items: center;
   width: 80px;
   margin: 0 2px;
+
 }
+.full {
+  width: 600px;
+  .landing__works__copy {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .landing__works__copy {
   font-family: "sen";
   margin: 5% 0;

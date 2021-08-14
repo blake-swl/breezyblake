@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './home.scss';
-import { scrollContainer } from '../Util/smoothscroll';
+
 // assets
 const hero ='https://breezyyblake.s3-us-west-1.amazonaws.com/DSC07848.jpg';
 import reel from '../../../dist/assets/DSC00602 copy.jpg';
@@ -11,41 +11,80 @@ import nike from '../../../dist/assets/works/nikemockup.jpg'
 import salonshoot from '../../../dist/assets/works/hair.jpg';
 
 
-const works = [
+let works = [
   {
     title: "Tako Poke + Ramen",
     image: ramen,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
     link: "/takopokeramen",
-    toggle: false
+    isActive: false
   },
   {
     title: "Nike Brand",
     image: nike,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
     link: "",
-    toggle: true
+    isActive: true
   },
   {
     title: "Oribe Hair Competition",
     image: salonshoot,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
     link: "",
-    toggle: false
+    isActive: false
   },
   {
     title: "Fashion Domino",
     image: fd,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
     link: "",
-    toggle: false
+    isActive: false
   },
 ]
 
 const Landing = () => {
-  const [toggle, setToggle] = useState(false);
+  
+  const [workList, setToggle] = useState(works);
 
-  console.log(toggle)
+
+  // map through works
+  // create copy of the list
+  // onClick, if isActive is false, set true
+
+  function changeView(toggle){
+    const newList = works.map((item) => {
+      if (item.isActive === toggle) {
+        const updatedItem = {
+          ...item,
+          toggle: !item.isActive,
+        };
+ 
+        return updatedItem;
+      }
+      // console.log(item.toggle)
+      return item;
+    });
+    console.log(newList)
+    setToggle(newList);
+  }
+  // let newList;
+  // function changeView(list) {
+  //   // setToggle(!list.isActive)
+  //   newList = works.map(item => {
+  //     // console.log(item.isActive)
+  //     if (item.isActive === list.isActive) {
+  //       const updatedItem = {
+  //         ...item,
+  //         list: !list.active
+  //       };
+  //       return updatedItem;
+  //     }
+  //     return newList;
+  //     // return newList;
+  //   })
+ 
+  // }
+ 
   
   return (
     <div className="landing" >
@@ -82,9 +121,9 @@ const Landing = () => {
         <h2 className="header">Selected Works</h2>
         <div className="landing__works__container">
             {
-              works.map(work => {
-               return <div className="landing__works__main">
-                 <img src={work.image} className="works__hero" onClick={() => setToggle(!!true)}/>
+              workList.map((work) => {
+               return <div className={`landing__works__main ${work.isActive ? "full" : ""}`} >
+                 <img src={work.image} className="works__hero"  onClick={() => changeView(work)} type="button"/>
                  <div className="landing__works__copy">
                    <h3>{work.title}</h3>
                    <p>{work.description}</p>
@@ -96,6 +135,9 @@ const Landing = () => {
               })
             }
         </div>
+        <Link className="roundbutton black space" to="/works">
+          See All
+        </Link>
       </section>
       <section className="landing__break">
         <div className="landing__break__overlay">
@@ -118,3 +160,25 @@ export default Landing;
               <polyline points="8 1 12 5 8 9"></polyline>
             </svg>
           </Link> */}
+
+                    {/* <div className="landing__works__main">
+              <img src={nike} alt="" className="works__hero"/>
+            </div>
+            <div className="landing__works__main full">
+              <img src={ramen} alt="" className="works__hero"/>
+              <div className="landing__works__copy">
+                <h3>Tako Poke Ramen</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                </p>
+                <Link className="roundbutton black space" to={""}>
+                  View Project
+                </Link>
+              </div>
+            </div>
+            <div className="landing__works__main">
+              <img src={salonshoot} alt="" className="works__hero"/>
+            </div>
+            <div className="landing__works__main">
+              <img src={fd} alt="" className="works__hero"/>
+            </div> */}
