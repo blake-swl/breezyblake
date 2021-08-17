@@ -13,6 +13,7 @@ import salonshoot from '../../../dist/assets/works/hair.jpg';
 
 let works = [
   {
+    id: 1,
     title: "Tako Poke + Ramen",
     image: ramen,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
@@ -20,6 +21,7 @@ let works = [
     isActive: false
   },
   {
+    id: 2,
     title: "Nike Brand",
     image: nike,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
@@ -27,6 +29,7 @@ let works = [
     isActive: true
   },
   {
+    id: 3,
     title: "Oribe Hair Competition",
     image: salonshoot,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
@@ -34,6 +37,7 @@ let works = [
     isActive: false
   },
   {
+    id: 4,
     title: "Fashion Domino",
     image: fd,
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
@@ -46,46 +50,15 @@ const Landing = () => {
   
   const [workList, setToggle] = useState(works);
 
+  const changeView = work => {
+    if (work.isActive) return;
 
-  // map through works
-  // create copy of the list
-  // onClick, if isActive is false, set true
-
-  function changeView(toggle){
-    const newList = works.map((item) => {
-      if (item.isActive === toggle) {
-        const updatedItem = {
-          ...item,
-          toggle: !item.isActive,
-        };
- 
-        return updatedItem;
-      }
-      // console.log(item.toggle)
+    setToggle(works.map(item => {
+      item.isActive = item.id === work.id ? true : false;
       return item;
-    });
-    console.log(newList)
-    setToggle(newList);
+    }))
   }
-  // let newList;
-  // function changeView(list) {
-  //   // setToggle(!list.isActive)
-  //   newList = works.map(item => {
-  //     // console.log(item.isActive)
-  //     if (item.isActive === list.isActive) {
-  //       const updatedItem = {
-  //         ...item,
-  //         list: !list.active
-  //       };
-  //       return updatedItem;
-  //     }
-  //     return newList;
-  //     // return newList;
-  //   })
- 
-  // }
- 
-  
+
   return (
     <div className="landing" >
       <div className="landing__container">
