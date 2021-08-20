@@ -4,7 +4,7 @@ import './works.scss';
 
 // assets
 import ramen from '../../../dist/banners/tako.jpg';
-import fd from '../../../dist/banners/fashiondomino.jpg';
+// import fd from '../../../dist/banners/fashiondomino.jpg';
 import ride from '../../../dist/assets/ride.jpg';
 
 const works = [
