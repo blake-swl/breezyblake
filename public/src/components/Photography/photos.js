@@ -27,11 +27,18 @@ import chelsea__beach3 from '../../../dist/assets/photography/DSC07374.jpg'
 import quise__beach1 from '../../../dist/assets/photography/DSC01258.jpg'
 import quise__beach2 from '../../../dist/assets/photography/DSC01623.jpg'
 import quise__beach3 from '../../../dist/assets/photography/DSC01363.jpg'
+import jackie__bell1 from '../../../dist/assets/photography/DSC06448-Edit.jpg'
+import jackie__bell2 from '../../../dist/assets/photography/DSC06209-1small.jpg'
+import jackie__bell3 from '../../../dist/assets/photography/DSC06040-1-Recovered.jpg'
 
 
 const photos = [ 
   {
     portraits: [
+      {
+        name: "jackie__bell",
+        links: [jackie__bell1, jackie__bell2, jackie__bell3],
+      },
       {
         name: "sophie__roof",
         links: [sophie__roof1, sophie__roof2, sophie__roof3],

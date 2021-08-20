@@ -35,13 +35,13 @@ const App = () => {
       {/* <Temp/> */}
       <ScrollToTop/>
       <Navigation />
-      {/* <Photography /> */}
-      <Sidebar/>
+      <Photography />
+      {/* <Sidebar/>
         <Switch>
             {routes.map(({path, Component}) => (
               <Route exact path={path} key={path} component={Component} />
               ))}
-        </Switch>
+        </Switch> */}
         <Footer />
 
     </div>
