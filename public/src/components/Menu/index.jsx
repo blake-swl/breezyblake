@@ -22,11 +22,11 @@ const Menu = (props) => {
         <div className="menu__container">
           <div className="menu__container__header">Menu</div>
           <ul onClick={props.toggle}>
-            <li><div className="menu__numbers">01</div><NavLink to="/" className="menu__item">Home</NavLink></li>
-            <li><div className="menu__numbers">02</div><NavLink to="/works" className="menu__item">Case Studies</NavLink></li>
+            <li><div className="menu__numbers">soon</div><NavLink to="/" className="menu__item strikethrough" style={{textDecoration: "line-through"}}>Home</NavLink></li>
+            <li><div className="menu__numbers">soon</div><NavLink to="/works" className="menu__item strikethrough">Case Studies</NavLink></li>
             <li><div className="menu__numbers">03</div><NavLink to="/photography" className="menu__item">Photography</NavLink></li>
-            <li><div className="menu__numbers">04</div><Link to="/about" className="menu__item">About</Link></li>
-            <li><div className="menu__numbers">05</div><Link to="/contact" className="menu__item">Contact</Link></li>
+            <li><div className="menu__numbers">soon</div><Link to="/about" className="menu__item strikethrough">About</Link></li>
+            <li><div className="menu__numbers">soon</div><Link to="/contact" className="menu__item strikethrough">Contact</Link></li>
           </ul>
         </div>
         <div className="menu__contacts">

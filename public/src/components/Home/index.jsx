@@ -51,6 +51,11 @@ const Landing = () => {
   
   const [workList, setToggle] = useState(works);
 
+  const variants = {
+    open: {width: 0, opacity: 0},
+    closed: {width: "-100%"}
+  }
+
   const changeView = work => {
     if (work.isActive) return;
 
@@ -93,10 +98,14 @@ const Landing = () => {
       </section>
       <section className="landing__works">
         <h2 className="header">Selected Works</h2>
-        <div className="landing__works__container">
+        <motion.div className="landing__works__container"
+          // animate={{x: 100}}
+          variants={variants}
+        >
             {
               workList.map((work) => {
-               return <div className={`landing__works__main ${work.isActive ? "full" : ""}`} >
+               return <motion.div className={`landing__works__main ${work.isActive ? "full" : ""}`} 
+               >
                  <img src={work.image} className="works__hero"  onClick={() => changeView(work)} type="button"/>
                  <div className="landing__works__copy">
                    <h3>{work.title}</h3>
@@ -105,10 +114,10 @@ const Landing = () => {
                     View Project
                    </Link>
                  </div>
-              </div>
+              </motion.div>
               })
             }
-        </div>
+        </motion.div>
         <Link className="roundbutton black space" to="/works">
           See All
         </Link>

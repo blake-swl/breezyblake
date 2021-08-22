@@ -117,6 +117,7 @@
 }
 .full {
   width: 600px;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
   .landing__works__copy {
     display: flex;
     flex-direction: column;
