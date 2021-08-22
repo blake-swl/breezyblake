@@ -34,7 +34,7 @@ const App = () => {
     <div className="app">
       {/* <Temp/> */}
       <ScrollToTop/>
-      <Navigation />
+      {/* <Navigation /> */}
       <Photography />
       {/* <Sidebar/>
         <Switch>

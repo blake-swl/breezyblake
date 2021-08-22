@@ -1,8 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './case.scss';
-import tako from '../../../dist/assets/tako/takobanner.png';
-import comp1 from '../../../dist/assets/tako/composite1.png'
+import tako from '../../../dist/assets/tako/takobanner.jpg';
+import comp1 from '../../../dist/assets/tako/composite1.jpg'
 import stitch from '../../../dist/assets/tako/stitch2.jpg';
 import menuItems from '../../../dist/assets/tako/menu-items.png';
 

@@ -17,10 +17,37 @@ const Photography = () => {
       <div className="photography__body">
         <h2>Selected Work</h2>
         <p>Based in Los Angeles, CA, I am a lifestyle and portrait photograher with a passion for landscape and street photography. </p>
+        {/* {
+            photos.map(photo => {
+              return photo.aerial.map(link => {
+                // console.log(link)
+                return <div className="row">
+                  <div className="col">
+                    {link.links.map((image, i) => {
+                      return <img src={image} alt={link.name} key={i}/>
+                    })}
+                  </div>
+                </div>
+              })
+            })
+          } */}
+        {/* <div className="row">
+          {
+              photos.map(photo => {
+                return photo.aerial.map(link => {
+                  return <div className="col">
+                      <img src={link.links} alt={link.name} />
+                    </div>
+                  // </div>
+                })
+              })
+            }
+
+        </div> */}
           {
             photos.map(photo => {
               return photo.portraits.map(link => {
-                console.log(link)
+                // console.log(link)
                 return <div className="row">
                   <div className="col">
                     {link.links.map((image, i) => {

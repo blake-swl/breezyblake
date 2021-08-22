@@ -17,7 +17,7 @@ const Footer = () => {
             <h1 className="logo">B. Lee</h1>
           </Link>
           <div className="footer__info">(323)482-0091</div>
-          <div className="footer__info">seulwoolee93@gmail.com</div>
+          <div className="footer__info">breezyyblake@gmail.com</div>
         </div>
         <div className="footer__col social">
           <h5>SOCIAL</h5>

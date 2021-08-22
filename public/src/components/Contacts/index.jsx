@@ -42,17 +42,19 @@ const Contacts = () => {
             <input type="text" name="from_name" id="from_name" placeholder="name" required/>
             <input type="email" name="from_email" id="from_email" placeholder="email" required/>
             <textarea name="message" id="message" placeholder="message" required/>
-            <button type="submit" className="cta" value="submit">
+            <button className="roundbutton black" value="submit">Send</button>
+
+            {/* <button type="submit" className="cta" value="submit">
               <span>Send</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
-            </button>
+            </button> */}
           </form>
         </div>
         <div className="contact__info">
-          <p>seulwoolee93@gmail.com</p>
+          <p>breezyyblake@gmail.com</p>
           <p>(323)482-0091</p>
         </div>
       </div>

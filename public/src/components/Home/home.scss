@@ -219,18 +219,22 @@
     img {
       border-radius: 30px;
       border: 6px solid #313131;
-  
+      
     }
   }
   .landing__works__main {
     display: flex;
     margin: 0 1%;
-
+    
     .landing__works__copy {
       width: 600px;
       margin: 0 5%;
       
     }
+  }
+  .landing__works__container {
+    margin-bottom: 3%;
+
   }
 }
 

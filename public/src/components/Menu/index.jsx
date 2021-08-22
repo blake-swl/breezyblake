@@ -3,7 +3,9 @@ import './menu.scss';
 import { Link, NavLink } from "react-router-dom";
 import { TweenMax, Circ } from 'gsap';
 
-const skate = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC04878.jpg';
+// const skate = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC04878.jpg';
+import skate from '../../../dist/assets/photography/2021-07-10-MKVZ9608-Yosemite.jpg'
+
 
 const Menu = (props) => {
 
@@ -29,7 +31,7 @@ const Menu = (props) => {
         </div>
         <div className="menu__contacts">
           <img src={skate} alt=""/>
-          <div>blakeswl@blstudio.co</div>
+          <div>breezyyblake@gmail.com</div>
           <div>(323)482-0091</div>
         </div>
       </div>
