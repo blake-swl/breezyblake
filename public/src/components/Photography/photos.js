@@ -34,6 +34,10 @@ import peak__church from '../../../dist/assets/photography/DSC00046.jpg'
 import chelsea__salon from '../../../dist/assets/photography/DSC07831.jpg'
 import bay__dtla from '../../../dist/assets/photography/DSC08932.jpg'
 import mel__chinatown from '../../../dist/assets/photography/DSC09947.jpg'
+import jor__dam1 from '../../../dist/assets/photography/DSC07234-Edit.jpg'
+import jor__dam2 from '../../../dist/assets/photography/DSC07270-Edit.jpg'
+import jor__dam3 from '../../../dist/assets/photography/DSC07116-Edit-2.jpg'
+
 
 
 
@@ -49,6 +53,10 @@ import downtown_eastern from '../../../dist/assets/photography/DJI_0363-HDR-Pano
 const photos = [ 
   {
     portraits: [
+      {
+        name: "jor__dam",
+        links: [jor__dam1, jor__dam2, jor__dam3],
+      },
       {
         name: "jackie__bell",
         links: [jackie__bell1, jackie__bell2, jackie__bell3],

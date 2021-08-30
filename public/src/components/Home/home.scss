@@ -102,6 +102,7 @@
   padding: 10% 0;
 }
 .landing__works__container {
+  width: 600px;
   display: flex;
   justify-content: center;
   // flex-direction: column;
@@ -111,23 +112,30 @@
   display: flex;
   // flex-direction: column;
   align-items: center;
-  width: 80px;
   margin: 0 2px;
+  flex-grow: 1;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  // transform: scaleX(.2);
 
 }
-.full {
-  width: 600px;
-  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+.active {
   .landing__works__copy {
     display: flex;
     flex-direction: column;
   }
+}
+.hero-full {
+  width: 100%;
+}
+.hero-shrunk {
+  width: 80px;
 }
 
 .landing__works__copy {
   font-family: "sen";
   margin: 5% 0;
   display: none;
+  opacity: 0;
   
   h3 {
     font-weight: 600;
@@ -147,7 +155,15 @@
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .15);
   max-width: 320px;
   min-width: 80px;
+  cursor: pointer;
 }
+// .hero-shrunk {
+//   transform: scaleX(1/7.5);
+//   transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+// }
+// .hero-full {
+//   transform: scaleX(1);
+// }
 .landing__break {
   width: 100%;
   background: url(https://breezyyblake.s3-us-west-1.amazonaws.com/DSC02060-3.jpg);

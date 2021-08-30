@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { AnimateSharedLayout, motion } from "framer-motion"
 import './home.scss';
 
 // assets
@@ -52,8 +52,8 @@ const Landing = () => {
   const [workList, setToggle] = useState(works);
 
   const variants = {
-    open: {width: 0, opacity: 0},
-    closed: {width: "-100%"}
+    open: {width: "600px", opacity: 0},
+    closed: {width: "80px"}
   }
 
   const changeView = work => {
@@ -98,26 +98,29 @@ const Landing = () => {
       </section>
       <section className="landing__works">
         <h2 className="header">Selected Works</h2>
-        <motion.div className="landing__works__container"
-          // animate={{x: 100}}
-          variants={variants}
-        >
+        <div className="landing__works__container">
             {
               workList.map((work) => {
-               return <motion.div className={`landing__works__main ${work.isActive ? "full" : ""}`} 
-               >
-                 <img src={work.image} className="works__hero"  onClick={() => changeView(work)} type="button"/>
-                 <div className="landing__works__copy">
-                   <h3>{work.title}</h3>
-                   <p>{work.description}</p>
-                   <Link className="roundbutton black space" to={`${work.link}`}>
-                    View Project
-                   </Link>
-                 </div>
-              </motion.div>
+               return (
+               <AnimateSharedLayout  type="crossfade">
+                <motion.div layout className={`landing__works__main ${work.isActive ? "active" : ""}`} 
+                  variants={variants}
+                >
+                  <img src={work.image} className={`works__hero ${work.isActive ? "hero-full" : "hero-shrunk"}`} onClick={() => changeView(work)} type="button"/>
+                  <motion.div className="landing__works__copy"
+                   animate={{opacity: 1}}
+                  >
+                    <h3>{work.title}</h3>
+                    <p>{work.description}</p>
+                    <Link className="roundbutton black space" to={`${work.link}`}>
+                      View Project
+                    </Link>
+                  </motion.div>
+                </motion.div>
+               </AnimateSharedLayout>)
               })
             }
-        </motion.div>
+        </div>
         <Link className="roundbutton black space" to="/works">
           See All
         </Link>
