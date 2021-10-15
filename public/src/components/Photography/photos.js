@@ -37,6 +37,12 @@ import mel__chinatown from '../../../dist/assets/photography/DSC09947.jpg'
 import jor__dam1 from '../../../dist/assets/photography/DSC07234-Edit.jpg'
 import jor__dam2 from '../../../dist/assets/photography/DSC07270-Edit.jpg'
 import jor__dam3 from '../../../dist/assets/photography/DSC07116-Edit-2.jpg'
+import union1 from '../../../dist/assets/photography/DSC08903.jpg'
+import union2 from '../../../dist/assets/photography/DSC08953.jpg'
+import union3 from '../../../dist/assets/photography/DSC08927.jpg'
+import bianca__target1 from '../../../dist/assets/photography/DSC09221.jpg'
+import bianca__target2 from '../../../dist/assets/photography/DSC09422.jpg'
+import bianca__target3 from '../../../dist/assets/photography/DSC09067.jpg'
 
 
 
@@ -54,16 +60,28 @@ const photos = [
   {
     portraits: [
       {
-        name: "jor__dam",
-        links: [jor__dam1, jor__dam2, jor__dam3],
-      },
-      {
         name: "jackie__bell",
         links: [jackie__bell1, jackie__bell2, jackie__bell3],
       },
       {
+        name: "salon",
+        links: [salon1, salon2, salon3]
+      },
+      {
+        name: "union__shoot",
+        links: [union1, union2, union3],
+      },
+      {
         name: "sophie__roof",
         links: [sophie__roof1, sophie__roof2, sophie__roof3],
+      },
+      {
+        name: "chelsea__beach",
+        links: [chelsea__beach1, chelsea__beach2, chelsea__beach3]
+      },
+      {
+        name: "jor__dam",
+        links: [jor__dam1, jor__dam2, jor__dam3],
       },
       {
         name: "jamie__dam",
@@ -74,12 +92,8 @@ const photos = [
         links: [chelsea__rooftop1, chelsea__rooftop2, chelsea__rooftop3]
       },
       {
-        name: "salon",
-        links: [salon1, salon2, salon3]
-      },
-      {
-        name: "chelsea__beach",
-        links: [chelsea__beach1, chelsea__beach2, chelsea__beach3]
+        name: "bianca__target",
+        links: [bianca__target1, bianca__target2, bianca__target3]
       },
       {
         name: "mens__mixed",

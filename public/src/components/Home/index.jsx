@@ -50,11 +50,8 @@ let works = [
 const Landing = () => {
   
   const [workList, setToggle] = useState(works);
+  const [width, changeWidth] = useState(0)
 
-  const variants = {
-    open: {width: "600px", opacity: 0},
-    closed: {width: "80px"}
-  }
 
   const changeView = work => {
     if (work.isActive) return;
@@ -68,7 +65,10 @@ const Landing = () => {
   return (
     <div className="landing" >
       <div className="landing__container">
-        <div className="landing__container__left">
+        <motion.div className="landing__container__left"
+        animate={{y: ["200px", "0px"], opacity: 1}}
+        initial={{opacity: 0}}
+        >
           <div className="landing__container__margin">
             <h1>UX/UI Designer</h1>
             <h1>Photographer</h1>
@@ -83,7 +83,7 @@ const Landing = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="landing__container__right">
           <div className="landing__container__overlay">
           </div>
@@ -99,27 +99,20 @@ const Landing = () => {
       <section className="landing__works">
         <h2 className="header">Selected Works</h2>
         <div className="landing__works__container">
-            {
-              workList.map((work) => {
-               return (
-               <AnimateSharedLayout  type="crossfade">
-                <motion.div layout className={`landing__works__main ${work.isActive ? "active" : ""}`} 
-                  variants={variants}
-                >
-                  <img src={work.image} className={`works__hero ${work.isActive ? "hero-full" : "hero-shrunk"}`} onClick={() => changeView(work)} type="button"/>
-                  <motion.div className="landing__works__copy"
-                   animate={{opacity: 1}}
-                  >
-                    <h3>{work.title}</h3>
-                    <p>{work.description}</p>
-                    <Link className="roundbutton black space" to={`${work.link}`}>
-                      View Project
-                    </Link>
-                  </motion.div>
-                </motion.div>
-               </AnimateSharedLayout>)
-              })
-            }
+          {workList.map((work => {
+            return <div className={`landing__works__main ${work.isActive ? "active" : ""}`}>
+              <motion.img className={`works__hero ${work.isActive ? "hero-full" : "hero-shrunk"}`} src={work.image} alt="" onClick={() => changeView(work)}
+                animate={{width: width + "320px"}}
+                // onClick={() => changeView(width)}
+              />
+              <div className="landing__works__copy">
+                <h3>{work.title}</h3>
+                <p>{work.description}</p>
+                <Link className="roundbutton black space" to={work.link}>View Project</Link>
+              </div>
+            </div>
+          }))}
+
         </div>
         <Link className="roundbutton black space" to="/works">
           See All
@@ -139,6 +132,24 @@ const Landing = () => {
 
 export default Landing;
 
+        {/* {
+              workList.map((work) => {
+               return (
+                <motion.div layout className={`landing__works__main ${work.isActive ? "active" : ""}`} 
+                  animate={{width: ["0px", "600px"]}}
+                >
+                  <motion.img src={work.image} className={`works__hero ${work.isActive ? "hero-full" : "hero-shrunk"}`} onClick={() => changeView(work)} type="button"
+                  />
+                  <motion.div className="landing__works__copy" animate={{opacity: 1}}>
+                    <h3>{work.title}</h3>
+                    <p>{work.description}</p>
+                    <Link className="roundbutton black space" to={`${work.link}`}>
+                      View Project
+                    </Link>
+                  </motion.div>
+                </motion.div>)
+              })
+            } */}
           {/* <Link className="landing__cta cta">
             <span>View my work</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
