@@ -43,6 +43,12 @@ import union3 from '../../../dist/assets/photography/DSC08927.jpg'
 import bianca__target1 from '../../../dist/assets/photography/DSC09221.jpg'
 import bianca__target2 from '../../../dist/assets/photography/DSC09422.jpg'
 import bianca__target3 from '../../../dist/assets/photography/DSC09067.jpg'
+import sophie__poarch1 from '../../../dist/assets/photography/DSC00929.jpg'
+import sophie__poarch2 from '../../../dist/assets/photography/DSC00976.jpg'
+import sophie__poarch3 from '../../../dist/assets/photography/DSC01151.jpg'
+import bianca__ctown1 from '../../../dist/assets/photography/DSC01205.jpg'
+import bianca__ctown2 from '../../../dist/assets/photography/DSC01315-1.jpg'
+import bianca__ctown3 from '../../../dist/assets/photography/DSC01223.jpg'
 
 
 
@@ -62,6 +68,14 @@ const photos = [
       {
         name: "jackie__bell",
         links: [jackie__bell1, jackie__bell2, jackie__bell3],
+      },
+      {
+        name: "bianca__ctown",
+        links: [bianca__ctown1, bianca__ctown2, bianca__ctown3],
+      },
+      {
+        name: "sophie__poarch",
+        links: [sophie__poarch1, sophie__poarch2, sophie__poarch3]
       },
       {
         name: "salon",

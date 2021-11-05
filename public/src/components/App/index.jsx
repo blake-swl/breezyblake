@@ -17,6 +17,15 @@ import Tako from '../CaseStudies/Tako';
 import Hike from '../CaseStudies/Hike'
 import Temp from '../Temporary';
 
+// const routes = [
+//   {path: '/', Component: Home},
+//   {path: '/photography', Component: Photography},
+//   {path: '/works', name: 'Case Studies', Component: Works},
+//   {path: '/contact', name: 'Contact', Component: Contacts},
+//   {path: '/about', name: 'About', Component: About},
+//   {path: '/takopokeramen', name: 'Tako Poke + Ramen', Component: Tako},
+//   {path: '/ride', name: 'Tako Poke + Ramen', Component: Hike},
+// ]
 const routes = [
   {path: '/', Component: Home},
   {path: '/photography', Component: Photography},
@@ -26,6 +35,7 @@ const routes = [
   {path: '/takopokeramen', name: 'Tako Poke + Ramen', Component: Tako},
   {path: '/ride', name: 'Tako Poke + Ramen', Component: Hike},
 ]
+
 
 const App = () => {
 
