@@ -49,7 +49,12 @@ import sophie__poarch3 from '../../../dist/assets/photography/DSC01151.jpg'
 import bianca__ctown1 from '../../../dist/assets/photography/DSC01205.jpg'
 import bianca__ctown2 from '../../../dist/assets/photography/DSC01315-1.jpg'
 import bianca__ctown3 from '../../../dist/assets/photography/DSC01223.jpg'
-
+import bianca__roof1 from '../../../dist/assets/photography/DSC02317.jpg'
+import bianca__roof2 from '../../../dist/assets/photography/DSC02254.jpg'
+import bianca__roof3 from '../../../dist/assets/photography/DSC02413.jpg'
+import bianca__rose1 from '../../../dist/assets/photography/DSC01397.jpg'
+import bianca__rose2 from '../../../dist/assets/photography/DSC01369.jpg'
+import bianca__rose3 from '../../../dist/assets/photography/DSC01390.jpg'
 
 
 
@@ -65,6 +70,10 @@ import downtown_eastern from '../../../dist/assets/photography/DJI_0363-HDR-Pano
 const photos = [ 
   {
     portraits: [
+      {
+        name: "bianca__roof",
+        links: [bianca__roof1, bianca__roof2, bianca__roof3],
+      },
       {
         name: "jackie__bell",
         links: [jackie__bell1, jackie__bell2, jackie__bell3],
@@ -88,6 +97,10 @@ const photos = [
       {
         name: "sophie__roof",
         links: [sophie__roof1, sophie__roof2, sophie__roof3],
+      },
+      {
+        name: "bianca__rose",
+        links: [bianca__rose1, bianca__rose2, bianca__rose3],
       },
       {
         name: "chelsea__beach",
