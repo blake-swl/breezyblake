@@ -42,7 +42,7 @@ const Tako = () => {
             </div>
           </div>
           <div className="case-summary-right">
-            <h4>Services</h4>
+            <h4>Services Provided</h4>
             <p>Digital Strategy</p>
             <p>Website Design</p>
             <p>Website Development</p>

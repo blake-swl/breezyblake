@@ -4,22 +4,22 @@ import './works.scss';
 
 // assets
 import ramen from '../../../dist/banners/tako.jpg';
-// import fd from '../../../dist/banners/fashiondomino.jpg';
+import fd from '../../../dist/assets/works/fashiondomino.jpg';
 import ride from '../../../dist/assets/ride.jpg';
 
 const works = [
   {
     title: "Tako Poke + Ramen",
     image: ramen,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    description: "We developed a modern website that showcased Tako Poke + Ramen's values through story telling highlighted by its visual aesthetic. In order to achieve this, we focused on capturing vibrant imagery that highlighted the final food product, as well as taking customers on a visceral journey in food preparation. By focusing on the food and its creation process, we brought the dine-in experience into the customers’ homes that would not otherwise exist.",
     link: "/takopokeramen"
   },
-  // {
-  //   title: "Fashion Domino",
-  //   image: fd,
-  //   description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-  //   link: ""
-  // }
+  {
+    title: "Fashion Domino",
+    image: fd,
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    link: "/fashiondomino"
+  }
 ]
 
 

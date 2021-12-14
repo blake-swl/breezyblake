@@ -134,10 +134,10 @@ const photos = [
         name: "nichestreet",
         links: [nichestreet1, nichestreet2, nichestreet3]
       },
-      {
-        name: "amber__rave",
-        links: [amber__rave1, amber__rave2, amber__rave3]
-      },
+      // {
+      //   name: "amber__rave",
+      //   links: [amber__rave1, amber__rave2, amber__rave3]
+      // },
     ],
     aerial: [
       {
