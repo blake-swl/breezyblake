@@ -17,6 +17,7 @@ import Tako from '../CaseStudies/Tako';
 import Hike from '../CaseStudies/Hike'
 import Temp from '../Temporary';
 import Fashion_domino from '../CaseStudies/Fashion_domino.jsx';
+import one2one from '../CaseStudies/one2one.jsx';
 
 // const routes = [
 //   {path: '/', Component: Home},
@@ -36,6 +37,7 @@ const routes = [
   {path: '/takopokeramen', name: 'Tako Poke + Ramen', Component: Tako},
   {path: '/fashiondomino', name: 'Fashion Domino', Component: Fashion_domino},
   {path: '/ride', name: 'Tako Poke + Ramen', Component: Hike},
+  {path: '/one2one', name: 'One 2 One Salon Shoot', Component: one2one},
 ]
 
 

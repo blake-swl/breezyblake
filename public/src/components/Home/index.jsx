@@ -124,7 +124,7 @@ const Landing = () => {
       <section className="landing__break">
         <div className="landing__break__overlay">
           <h3>Let's work together</h3>
-          <Link className="roundbutton white">
+          <Link className="roundbutton white" to="/contact">
             Contact
           </Link>
         </div>

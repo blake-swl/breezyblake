@@ -6,6 +6,7 @@ import './works.scss';
 import ramen from '../../../dist/banners/tako.jpg';
 import fd from '../../../dist/assets/works/fashiondomino.jpg';
 import ride from '../../../dist/assets/ride.jpg';
+import hair from '../../../dist/assets/works/hair.jpg';
 
 const works = [
   {
@@ -17,9 +18,15 @@ const works = [
   {
     title: "Fashion Domino",
     image: fd,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    description: "At Fashion Domino, we prioritized efficiency and qua",
     link: "/fashiondomino"
-  }
+  },
+  {
+    title: "One 2 One Salon Shoot",
+    image: hair,
+    description: "At Fashion Domino, we prioritized efficiency and qua",
+    link: "/one2one"
+  },
 ]
 
 
@@ -40,18 +47,9 @@ const Works = () => {
           </div>
         </section>
       }))}
-      {/* <section className="caseStudy">
-        <div className="caseStudy__banner">
-          <img src={ramen} alt=""/>
-        </div>
-        <div className="caseStudy__description">
-          <h1 className="header works">Tako Poke + Ramen</h1>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
-          <Link className="roundbutton black">
-            See my work
-          </Link>
-        </div>
-      </section> */}
+      <section>
+        hello
+      </section>
     </div>
     )
   }

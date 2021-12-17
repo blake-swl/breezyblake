@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './case.scss';
-import tako from '../../../dist/assets/fds_banner.jpg';
+import fds from '../../../dist/assets/fds_banner.jpg';
 import comp1 from '../../../dist/assets/tako/composite1.jpg'
 import stitch from '../../../dist/assets/tako/stitch2.jpg';
 import menuItems from '../../../dist/assets/tako/menu-items.png';
@@ -17,7 +17,7 @@ import redlolly from '../../../dist/assets/works/fashiondomino/red_lolly.jpg'
 const Tako = () => {
   return (
     <section className="case-page">
-      <div className="case-banner" style={{background: `url(${tako}) 50% 50%`, backgroundSize: 'cover'}}>
+      <div className="case-banner" style={{background: `url(${fds}) 50% 50%`, backgroundSize: 'cover'}}>
         <div className="case-banner-overlay">
           <h2>Fashion Domino</h2>
           <span>Every Day Fashion</span>
