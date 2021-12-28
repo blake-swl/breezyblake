@@ -55,14 +55,15 @@ const works = [
 
 const Works = () => {
   return(
-    <Swiper
-      direction={'vertical'}
-      mousewheel={true}
-      slidesPerView={1} spaceBetween={30}
-      pagination={{
-        "clickable": true
-      }}
-    >
+    // <Swiper
+    //   direction={'vertical'}
+    //   mousewheel={true}
+    //   slidesPerView={1} spaceBetween={30}
+    //   pagination={{
+    //     "clickable": true
+    //   }}
+    // >
+    <div>
       <div className="caseStudies__container">
         {works.map((work => {
           return <SwiperSlide>
@@ -95,7 +96,8 @@ const Works = () => {
         </div>
       </SwiperSlide>
       </div>
-    </Swiper>
+    {/* // </Swiper> */}
+    </div>
     )
   }
   export default Works;
