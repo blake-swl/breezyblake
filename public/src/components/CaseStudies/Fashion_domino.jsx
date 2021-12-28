@@ -2,15 +2,17 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './case.scss';
 import fds from '../../../dist/assets/fds_banner.jpg';
-import comp1 from '../../../dist/assets/tako/composite1.jpg'
-import stitch from '../../../dist/assets/tako/stitch2.jpg';
-import menuItems from '../../../dist/assets/tako/menu-items.png';
 import americanAble from '../../../dist/assets/works/fashiondomino/american_able.jpg'
 import pinkNote from '../../../dist/assets/works/fashiondomino/pink_note.jpg'
 import hayden from '../../../dist/assets/works/fashiondomino/hayden.jpg'
 import hemThread from '../../../dist/assets/works/fashiondomino/hem_thread.jpg'
 import korca from '../../../dist/assets/works/fashiondomino/korca.jpg'
 import redlolly from '../../../dist/assets/works/fashiondomino/red_lolly.jpg'
+import comp1 from '../../../dist/assets/works/fashiondomino/fd_newsletterbanners.jpg'
+import fds__flyer1 from '../../../dist/assets/works/fashiondomino/fds.jpg'
+import shippingsolution from '../../../dist/assets/works/fashiondomino/shippingsolution.jpg'
+import fd__ad from '../../../dist/assets/works/fashiondomino/fd_ad.jpg'
+import fds__flyer2 from '../../../dist/assets/works/fashiondomino/FDSflyer.jpg'
 
 
 
@@ -27,8 +29,7 @@ const Tako = () => {
         <div className="case-summary-divider row">
           <div className="case-summary-left">
             <p>
-              At Fashion Domino, we prioriti
-            </p>
+              Fashion Domino is the premium Los Angeles based Wholesale Fashion Marketplace that connects wholesale clothing, accessories, handbags, shoes and cosmetics manufacturers & distributors with buyers from across the USA and the whole globe.            </p>
             <div className="case-mission--images">
               <img src={hemThread} alt="Hem & Thread banner designed by Blake Lee" className="case-mission__images"/>
               @Hem & Thread
@@ -52,24 +53,18 @@ const Tako = () => {
           </div>
         </div>
       </div>
-      {/* <div className="case-photo first" style={{background: `url(${comp1}) 50% 50%`, backgroundSize: 'cover'}}>
-      </div> */}
-      {/* <div className="case-summary container">
-        <div className="case-summary-divider row">
-          <div className="case-summary-left">
-          </div>
+      <div className="case-photo first" style={{background: `url(${comp1}) 50% 50%`, backgroundSize: 'cover'}}>
+      </div>
+      <div className="case__offset">
+        <div>
+          <img src={fds__flyer1} alt="" />
+          <img src={shippingsolution} alt="" />
         </div>
-      </div> */}
-      {/* <div className="case-photo second" style={{background: `url(${stitch}) 50% 50%`, backgroundSize: 'cover'}}> </div>
-      <div className="case-photo third" style={{background: `url(${menuItems}) 50% 50%`, backgroundSize: 'cover'}}> </div>
-      <div className="case-summary container">
-        <div className="case-summary-divider row">
-          <div className="case-summary-left">
-            <div className="case-mission">
-            </div>
-          </div>
+        <div>
+          <img src={fd__ad} alt="" />
+          <img src={fds__flyer2} alt="" />
         </div>
-      </div> */}
+      </div>
     </section>
   )
 };

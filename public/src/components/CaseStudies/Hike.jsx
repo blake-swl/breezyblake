@@ -2,16 +2,18 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './case.scss';
 
-const banner = 'https://breezyyblake.s3-us-west-1.amazonaws.com/hike.png'
-const styleguide = 'https://breezyyblake.s3-us-west-1.amazonaws.com/Styleguide.png';
-const still = 'https://breezyyblake.s3-us-west-1.amazonaws.com/stills.png';
+// const banner = 'https://breezyyblake.s3-us-west-1.amazonaws.com/hike.png'
+import banner from '../../../dist/assets/works/riderco/hike.jpg'
+import styleguide from '../../../dist/assets/works/riderco/styleguide.jpg'
+import stills from '../../../dist/assets/works/riderco/stills.jpg'
+import screencap from '../../../dist/assets/works/riderco/screencap.jpg'
 
 const Hike = () => {
   return (
     <section className="case-page">
       <div className="case-banner" style={{background: `url(${banner}) 50% 50% fixed`, backgroundSize: 'cover'}}>
         <div className="case-banner-overlay">
-          <h2>Hike</h2>
+          <h2>Riders Co.</h2>
           <span>Simplifying Outdoors</span>
         </div>
       </div>
@@ -47,7 +49,7 @@ const Hike = () => {
           </div>
         </div>
       </div>
-      <div className="case-photo first" style={{background: `url(${still}) 50% 50%`, backgroundSize: 'cover'}}>
+      <div className="case-photo first" style={{background: `url(${stills}) 50% 50%`, backgroundSize: 'cover'}}>
       </div>
       <div className="case-summary container">
         <div className="case-summary-divider row">
@@ -64,23 +66,24 @@ const Hike = () => {
         </div>
       </div>
       <div className="case-photo second" style={{background: `url(${styleguide}) 50% 50%`, backgroundSize: 'cover'}}> </div>
-      {/* <div className="case-photo third"> </div> */}
-      <div className="case-summary container">
+      <div className="case-photo second" style={{background: `url(${screencap}) 50% 50%`, backgroundSize: 'cover'}}> </div>
+
+      {/* <div className="case-summary container">
         <div className="case-summary-divider row">
           <div className="case-summary-left">
             <div className="case-mission">
-              {/* <div className="case-mission-header">
-                Solution
-              </div>
-              <div className="case-mission-statement">
-              We developed a modern website that showcased Tako Poke + Ramen's values through story telling highlighted by its visual aesthetic. In order to achieve this, we focused on capturing vibrant imagery that highlighted the final food product, as well as taking customers on a visceral journey in food preparation. By focusing on the food and its creation process, we brought the dine-in experience into the customers’ homes that would not otherwise exist.           
-              </div> */}
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 };
 
 export default withRouter(Hike);
+{/* <div className="case-mission-header">
+  Solution
+</div>
+<div className="case-mission-statement">
+We developed a modern website that showcased Tako Poke + Ramen's values through story telling highlighted by its visual aesthetic. In order to achieve this, we focused on capturing vibrant imagery that highlighted the final food product, as well as taking customers on a visceral journey in food preparation. By focusing on the food and its creation process, we brought the dine-in experience into the customers’ homes that would not otherwise exist.           
+</div> */}

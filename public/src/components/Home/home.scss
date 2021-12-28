@@ -58,7 +58,8 @@
 }
 .landing__container__right {
   width: 100%;
-  background: url('../../../dist/cover.jpg') 50% 50%;
+  // background-color: #EAE5D8;
+  background: url('../../../dist/banners/cover.jpg') 50% 50%;
   background-size: cover;
   height: 60vh;
   z-index: 0;
@@ -66,15 +67,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h4 {
-    position: absolute;
-    font-size: 100px;
-    color: #E5E5E5;
-    font-weight: bold;
-    font-style: italic;
-    z-index: 1;
-    mix-blend-mode: soft-light;
-  }
+
 }
 .landing__about__reel {
   display: flex;
@@ -83,13 +76,19 @@
   margin: 5% auto;
 }
 .landing__reel__container {
-  position: relative;
   width: 80%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 56.25%;
   
-  img {
-    width: 100%;
-    height: auto;
+  .reel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: 100%;
+    // height: auto;
     border-radius: 15px;
     border: 3px solid #313131;
     box-shadow: 0 30px 60px rgba(0,0,0,.30);
@@ -112,6 +111,7 @@
 }
 .landing__works__main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 0 2px;
   flex-grow: 1;
@@ -122,6 +122,18 @@
   .landing__works__copy {
     display: flex;
     flex-direction: column;
+  }
+}
+.landing__work {
+  background: #BEB082;
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 300px;
+    width: auto;
   }
 }
 .works__hero {
@@ -233,6 +245,10 @@
       border: 6px solid #313131;
       
     }
+  }
+  .landing__works {
+    margin: 5% auto;
+    padding: 5% 0;
   }
   .landing__works__main {
     display: flex;

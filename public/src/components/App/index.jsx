@@ -36,7 +36,7 @@ const routes = [
   {path: '/about', name: 'About', Component: About},
   {path: '/takopokeramen', name: 'Tako Poke + Ramen', Component: Tako},
   {path: '/fashiondomino', name: 'Fashion Domino', Component: Fashion_domino},
-  {path: '/ride', name: 'Tako Poke + Ramen', Component: Hike},
+  {path: '/ride', name: 'Riders Co.', Component: Hike},
   {path: '/one2one', name: 'One 2 One Salon Shoot', Component: one2one},
 ]
 
@@ -49,13 +49,13 @@ const App = () => {
       {/* <Temp/> */}
       <ScrollToTop/>
       <Navigation />
-      <Photography />
+      {/* <Photography /> */}
       <Sidebar/>
-        {/* <Switch>
+        <Switch>
             {routes.map(({path, Component}) => (
               <Route exact path={path} key={path} component={Component} />
               ))}
-        </Switch> */}
+        </Switch>
         <Footer />
 
     </div>

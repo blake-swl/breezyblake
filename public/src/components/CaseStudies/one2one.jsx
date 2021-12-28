@@ -2,10 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './case.scss';
 import hair from '../../../dist/assets/DSC00602.jpg';
-import comp1 from '../../../dist/assets/tako/composite1.jpg'
-import stitch from '../../../dist/assets/tako/stitch2.jpg';
-import menuItems from '../../../dist/assets/tako/menu-items.png';
-
 
 
 const Tako = () => {
@@ -21,7 +17,7 @@ const Tako = () => {
         <div className="case-summary-divider row">
           <div className="case-summary-left">
             <p>
-              At Fashion Domino, we prioriti
+            At One to One Salon we live by the mantra "We're here to ensure our clients' happiness; with us and within themselves". Our number one goal is to provide our clients with the best experience and results they've ever had at a salon.
             </p>
             <div className="case-mission--images">
             </div>

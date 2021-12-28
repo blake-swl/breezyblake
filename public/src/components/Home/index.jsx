@@ -1,49 +1,54 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AnimateSharedLayout, motion } from "framer-motion"
+import ReactPlayer from 'react-player'
 import './home.scss';
 
 // assets
-const hero ='https://breezyyblake.s3-us-west-1.amazonaws.com/DSC07848.jpg';
-import reel from '../../../dist/assets/DSC00602 copy.jpg';
-import ramen from '../../../dist/assets/works/tako.jpg';
-import fd from '../../../dist/assets/works/fashiondomino.jpg';
-import nike from '../../../dist/assets/works/nikemockup.jpg'
-import salonshoot from '../../../dist/assets/works/hair.jpg';
-
+import ramen from '../../../dist/assets/works/tako_main.jpg';
+import fd from '../../../dist/assets/works/fds_banner.jpg';
+import nike from '../../../dist/assets/works/ride.jpg'
+import salonshoot from '../../../dist/assets/works/DSC00602.jpg';
+import reel from '../../../dist/assets/photography/DSC01329-Enhanced.jpg';
 
 let works = [
   {
     id: 1,
     title: "Tako Poke + Ramen",
     image: ramen,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    description: "We developed a modern website that showcased Tako Poke + Ramen's values through story telling highlighted by its visual aesthetic. In order to achieve this, we focused on capturing vibrant imagery that highlighted the final food product, as well as taking customers on a visceral journey in food preparation. By focusing on the food and its creation process, we brought the dine-in experience into the customers’ homes that would not otherwise exist.",
     link: "/takopokeramen",
-    isActive: false
+    isActive: false,
+    color: "#BEB082"
   },
   {
     id: 2,
-    title: "Nike Brand",
+    title: "Riders Co",
     image: nike,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    description: "Our goal is to create a seamless experience for users, from casual outdoor enthusiasts to seasoned veterans, a platform that will provide quick, user aggregated and curated destinations while integrating fitness tracking solutions that we all come to appreciate.",
     link: "",
-    isActive: true
+    isActive: true,
+    color: "#82A7BE"
   },
   {
     id: 3,
     title: "Oribe Hair Competition",
     image: salonshoot,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    // description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
     link: "",
-    isActive: false
+    isActive: false,
+    color: "#BEB082"
+
   },
   {
     id: 4,
     title: "Fashion Domino",
     image: fd,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+    description: "Fashion Domino is the premium Los Angeles based Wholesale Fashion Marketplace that connects wholesale clothing, accessories, handbags, shoes and cosmetics manufacturers & distributors with buyers from across the USA and the whole globe.",
     link: "",
-    isActive: false
+    isActive: false,
+    color: "#BE8290"
+
   },
 ]
 
@@ -93,15 +98,25 @@ const Landing = () => {
         <h2 className="header">To delight with 
           <br/>design & technology </h2>
           <div className="landing__reel__container">
-            <img src={reel} alt="" />
+            <ReactPlayer url="https://youtu.be/lTxhrEpZ4r0"
+              light={reel} 
+              controls={false}
+              width="100%"
+              height="75%"
+              className="reel"
+            />
           </div>
       </section>
       <section className="landing__works">
         <h2 className="header">Selected Works</h2>
         <div className="landing__works__container">
-          <div className="landing__works__main">
-            
-          </div>
+          {/* <div className="landing__works__main">
+            { workList.map((work => {
+              return <div className="landing__work" style={{background: `${work.color}`}}>
+                <img src={work.image} />
+              </div>
+            }))}
+          </div> */}
           {/* {workList.map((work => {
             return <div className={`landing__works__main ${work.isActive ? "active" : ""}`}>
               <motion.img className={`works__hero ${work.isActive ? "hero-full" : "hero-shrunk"}`} src={work.image} alt="" onClick={() => changeView(work)}

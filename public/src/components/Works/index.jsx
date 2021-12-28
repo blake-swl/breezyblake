@@ -1,12 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './works.scss';
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/swiper-bundle.min.css'
+// import 'swiper/less/pagination';
+import 'swiper/swiper.min.css'
+import SwiperCore, {
+  Mousewheel,Pagination
+} from 'swiper';
 
 // assets
 import ramen from '../../../dist/banners/tako.jpg';
 import fd from '../../../dist/assets/works/fashiondomino.jpg';
 import ride from '../../../dist/assets/ride.jpg';
 import hair from '../../../dist/assets/works/hair.jpg';
+
+import halloween from '../../../dist/assets/works/mockups/universal.jpg'
+import blogpost from '../../../dist/assets/works/mockups/blogpost.jpg'
+import dodgers from '../../../dist/assets/works/mockups/dodgers.jpg'
+import gloves from '../../../dist/assets/works/mockups/gloves.jpg'
+import nishimenu from '../../../dist/assets/works/mockups/nishimenu.jpg'
+import hike from '../../../dist/assets/works/mockups/hike.jpg'
+
+
+SwiperCore.use([Mousewheel,Pagination]);
 
 const works = [
   {
@@ -18,13 +35,19 @@ const works = [
   {
     title: "Fashion Domino",
     image: fd,
-    description: "At Fashion Domino, we prioritized efficiency and qua",
+    description: "Fashion Domino is the premium Los Angeles based Wholesale Fashion Marketplace that connects wholesale clothing, accessories, handbags, shoes and cosmetics manufacturers & distributors with buyers from across the USA and the whole globe.",
     link: "/fashiondomino"
+  },
+  {
+    title: "Riders Co.",
+    image: hike,
+    description: "Our goal is to create a seamless experience for users, from casual outdoor enthusiasts to seasoned veterans, a platform that will provide quick, user aggregated and curated destinations while integrating fitness tracking solutions that we all come to appreciate.",
+    link: "/ride"
   },
   {
     title: "One 2 One Salon Shoot",
     image: hair,
-    description: "At Fashion Domino, we prioritized efficiency and qua",
+    // description: "At Fashion Domino, we prioritized efficiency and qua",
     link: "/one2one"
   },
 ]
@@ -32,25 +55,47 @@ const works = [
 
 const Works = () => {
   return(
-    <div className="caseStudies__container">
-      {works.map((work => {
-        return <section className="caseStudy">
-          <div className="caseStudy__banner">
-            <img src={`${work.image}`} alt=""/>
-          </div>
-          <div className="caseStudy__description">
-            <h1 className="header works">{work.title}</h1>
-            <p>{work.description}</p>
-            <Link className="roundbutton black" to={work.link}>
-              See my work
-            </Link>
-          </div>
-        </section>
-      }))}
-      <section>
-        hello
-      </section>
-    </div>
+    <Swiper
+      direction={'vertical'}
+      mousewheel={true}
+      slidesPerView={1} spaceBetween={30}
+      pagination={{
+        "clickable": true
+      }}
+    >
+      <div className="caseStudies__container">
+        {works.map((work => {
+          return <SwiperSlide>
+            <div className="caseStudy">
+              <div className="caseStudy__banner">
+                <img src={`${work.image}`} alt=""/>
+              </div>
+              <div className="caseStudy__description">
+                <h1 className="header works">{work.title}</h1>
+                <p>{work.description}</p>
+                <Link className="roundbutton black" to={work.link}>
+                  See my work
+                </Link>
+              </div>
+
+            </div>
+          </SwiperSlide>
+        }))}
+      <SwiperSlide>
+        <div className="caseMockups">
+          <h1 className='header works'>Mockups</h1>
+          <ul className="caseMockups__grid">
+            <img src={halloween} alt="" />
+            <img src={blogpost} alt="" />
+            <img src={dodgers} alt="" />
+            <img src={gloves} alt="" />
+            <img src={nishimenu} alt="" />
+            <img src={hike} alt="" />
+          </ul>
+        </div>
+      </SwiperSlide>
+      </div>
+    </Swiper>
     )
   }
   export default Works;
