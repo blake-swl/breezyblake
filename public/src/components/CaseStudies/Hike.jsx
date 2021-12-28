@@ -4,7 +4,7 @@ import './case.scss';
 
 
 import banner from '../../../dist/assets/works/riderco/hike.jpg'
-import styleguide from '../../../dist/assets/works/riderco/styleguide.jpg'
+// import styleguide from '../../../dist/assets/works/riderco/styleguide.jpg'
 import stills from '../../../dist/assets/works/riderco/stills.jpg'
 import screencap from '../../../dist/assets/works/riderco/screencap.jpg'
 
@@ -65,7 +65,7 @@ const Hike = () => {
           </div>
         </div>
       </div>
-      <div className="case-photo second" style={{background: `url(${styleguide}) 50% 50%`, backgroundSize: 'cover'}}> </div>
+      {/* <div className="case-photo second" style={{background: `url(${styleguide}) 50% 50%`, backgroundSize: 'cover'}}> </div> */}
       <div className="case-photo second" style={{background: `url(${screencap}) 50% 50%`, backgroundSize: 'cover'}}> </div>
 
       {/* <div className="case-summary container">

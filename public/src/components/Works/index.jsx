@@ -17,7 +17,7 @@ import hair from '../../../dist/assets/works/hair.jpg';
 
 import halloween from '../../../dist/assets/works/mockups/universal.jpg'
 import blogpost from '../../../dist/assets/works/mockups/blogpost.jpg'
-import dodgers from '../../../dist/assets/works/mockups/dodgers.jpg'
+// import dodgers from '../../../dist/assets/works/mockups/dodgers.jpg'
 import gloves from '../../../dist/assets/works/mockups/gloves.jpg'
 import nishimenu from '../../../dist/assets/works/mockups/nishimenu.jpg'
 import hike from '../../../dist/assets/works/mockups/hike.jpg'
@@ -47,7 +47,7 @@ const works = [
   {
     title: "One 2 One Salon Shoot",
     image: hair,
-    description: "At Fashion Domino, we prioritized efficiency and qua",
+    // description: "At Fashion Domino, we prioritized efficiency and qua",
     link: "/one2one"
   },
 ]
