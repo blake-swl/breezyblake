@@ -87,7 +87,7 @@ const Works = () => {
           <ul className="caseMockups__grid">
             <img src={halloween} alt="" />
             <img src={blogpost} alt="" />
-            <img src={dodgers} alt="" />
+            {/* <img src={dodgers} alt="" /> */}
             <img src={gloves} alt="" />
             <img src={nishimenu} alt="" />
             <img src={hike} alt="" />
