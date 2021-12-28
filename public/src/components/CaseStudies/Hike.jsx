@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './case.scss';
 
-// const banner = 'https://breezyyblake.s3-us-west-1.amazonaws.com/hike.png'
+
 import banner from '../../../dist/assets/works/riderco/hike.jpg'
 import styleguide from '../../../dist/assets/works/riderco/styleguide.jpg'
 import stills from '../../../dist/assets/works/riderco/stills.jpg'

@@ -47,7 +47,7 @@ const works = [
   {
     title: "One 2 One Salon Shoot",
     image: hair,
-    // description: "At Fashion Domino, we prioritized efficiency and qua",
+    description: "At Fashion Domino, we prioritized efficiency and qua",
     link: "/one2one"
   },
 ]
