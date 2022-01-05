@@ -21,7 +21,7 @@ let works = [
     isActive: false,
     color: "#BEB082",
     position: "flex-start",
-    img_position: "-10%"
+    img_position: "45%"
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ let works = [
     isActive: true,
     color: "#82A7BE",
     position: "flex-end",
-    img_position: "45%"
+    img_position: "-10%"
   },
   // {
   //   id: 3,
@@ -53,7 +53,7 @@ let works = [
     isActive: false,
     color: "#BE8290",
     position: "flex-start",
-    img_position: "-10%"
+    img_position: "45%"
   },
 ]
 
@@ -114,7 +114,7 @@ const Landing = () => {
       <section className="landing__works">
         <h2 className="header">Selected Works</h2>
         <div className="landing__works__container">
-            { workList.map((work => {
+            {/* { workList.map((work => {
               return <div className="landing__works__main" style={{alignItems: `${work.position}`}}>
                 <div className="landing__work" style={{background: `${work.color}`}}>
                   <img className="shadow" src={work.image} style={{left: `${work.img_position}`}}/>
@@ -123,7 +123,7 @@ const Landing = () => {
                   <Link className="roundbutton black space" to={work.link}>View Project</Link>
               </div>
           </div>
-            }))}
+            }))} */}
           {/* {workList.map((work => {
             return <div className={`landing__works__main ${work.isActive ? "active" : ""}`}>
               <motion.img className={`works__hero ${work.isActive ? "hero-full" : "hero-shrunk"}`} src={work.image} alt="" onClick={() => changeView(work)}

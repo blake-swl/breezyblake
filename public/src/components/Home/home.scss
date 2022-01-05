@@ -105,13 +105,14 @@
   flex-direction: column;
   align-items: center;
   height: auto;
+  width: 80%;
   margin: 15% auto;
   padding: 10% 0;
 }
 .landing__works__container {
   // width: 600px;
   position: relative;
-  width: 60%;
+  // width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,14 +138,14 @@
 .landing__work {
   background: #BEB082;
   // width: 1000px;
-  // width: 60%;
+  width: 60%;
   height: 500px;
   display: flex;
   flex-direction: column;
   color: $white;
   font-family: "sen";
   position: relative;
-  // padding: 10% 0 0 20%;
+  padding: 10% 0 0 20%;
   margin-bottom: 5%;
   
 
