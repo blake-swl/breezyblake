@@ -19,7 +19,9 @@ let works = [
     description: "We developed a modern website that showcased Tako Poke + Ramen's values through story telling highlighted by its visual aesthetic. In order to achieve this, we focused on capturing vibrant imagery that highlighted the final food product, as well as taking customers on a visceral journey in food preparation. By focusing on the food and its creation process, we brought the dine-in experience into the customers’ homes that would not otherwise exist.",
     link: "/takopokeramen",
     isActive: false,
-    color: "#BEB082"
+    color: "#BEB082",
+    position: "flex-start",
+    img_position: "-10%"
   },
   {
     id: 2,
@@ -28,18 +30,20 @@ let works = [
     description: "Our goal is to create a seamless experience for users, from casual outdoor enthusiasts to seasoned veterans, a platform that will provide quick, user aggregated and curated destinations while integrating fitness tracking solutions that we all come to appreciate.",
     link: "",
     isActive: true,
-    color: "#82A7BE"
+    color: "#82A7BE",
+    position: "flex-end",
+    img_position: "45%"
   },
-  {
-    id: 3,
-    title: "Oribe Hair Competition",
-    image: salonshoot,
-    // description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-    link: "",
-    isActive: false,
-    color: "#BEB082"
+  // {
+  //   id: 3,
+  //   title: "Oribe Hair Competition",
+  //   image: salonshoot,
+  //   // description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+  //   link: "",
+  //   isActive: false,
+  //   color: "#BEB082"
 
-  },
+  // },
   {
     id: 4,
     title: "Fashion Domino",
@@ -47,8 +51,9 @@ let works = [
     description: "Fashion Domino is the premium Los Angeles based Wholesale Fashion Marketplace that connects wholesale clothing, accessories, handbags, shoes and cosmetics manufacturers & distributors with buyers from across the USA and the whole globe.",
     link: "",
     isActive: false,
-    color: "#BE8290"
-
+    color: "#BE8290",
+    position: "flex-start",
+    img_position: "-10%"
   },
 ]
 
@@ -90,8 +95,7 @@ const Landing = () => {
           </div>
         </motion.div>
         <div className="landing__container__right">
-          <div className="landing__container__overlay">
-          </div>
+            <img className="border" src={"https://ik.imagekit.io/breezy/Breezyblake/media/DSC00877_hhIZkQIFd.jpg?updatedAt=1641261847855"} alt="" />
         </div>
       </div>
       <section className="landing__about__reel">
@@ -110,13 +114,16 @@ const Landing = () => {
       <section className="landing__works">
         <h2 className="header">Selected Works</h2>
         <div className="landing__works__container">
-          {/* <div className="landing__works__main">
             { workList.map((work => {
-              return <div className="landing__work" style={{background: `${work.color}`}}>
-                <img src={work.image} />
+              return <div className="landing__works__main" style={{alignItems: `${work.position}`}}>
+                <div className="landing__work" style={{background: `${work.color}`}}>
+                  <img className="shadow" src={work.image} style={{left: `${work.img_position}`}}/>
+                  <h3>{work.title}</h3>
+                  <p>{work.description}</p>
+                  <Link className="roundbutton black space" to={work.link}>View Project</Link>
               </div>
+          </div>
             }))}
-          </div> */}
           {/* {workList.map((work => {
             return <div className={`landing__works__main ${work.isActive ? "active" : ""}`}>
               <motion.img className={`works__hero ${work.isActive ? "hero-full" : "hero-shrunk"}`} src={work.image} alt="" onClick={() => changeView(work)}

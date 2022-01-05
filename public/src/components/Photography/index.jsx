@@ -4,6 +4,8 @@ import './photography.scss';
 
 import photos from './photos';
 
+const banner = "https://ik.imagekit.io/breezy/Breezyblake/photography/DSC01329-Enhanced_doOuQFB1cC.jpg?updatedAt=1640908830080";
+
 
 
 const Photography = () => {
@@ -13,6 +15,7 @@ const Photography = () => {
       {/* <PhotoNav /> */}
       <div className="photography__banner">
         {/* <h1 className="freight">Photography</h1> */}
+        <img src={banner} className="border" alt="" />
       </div>
       <div className="photography__body">
         <h2>Selected Work</h2>

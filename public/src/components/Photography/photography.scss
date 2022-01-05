@@ -6,6 +6,7 @@
   font-family: $futura;
   z-index: 0;
   background: $white;
+  position: relative;
 }
 .portfolio__link {
   text-decoration: none;
@@ -20,22 +21,33 @@
 }
 .photography__banner {
   display: flex;
-  height: 40vh;
-  background: url(../../../dist/banners/photo_banner.jpg) 50% 50%;
-  // background: url(https://breezyyblake.s3-us-west-1.amazonaws.com/DSC05710.jpg) 50% 50%;
-  background-size: cover;
-  align-items: flex-end;
-  // justify-content: center;
+  // height: 40vh;
+  flex-direction: column;
+  background-attachment: fixed;
+  // background: url(../../../dist/banners/photo_banner.jpg) 50% 50%;
+  background: #E8E6DE;
+  align-items: center;
+  justify-content: center;
   font-size: 42px;
   color: $white;
   font-weight: 400;
   text-transform: uppercase;
   // font-style: italic;
+  
   h1 {
     padding: 0 3vw 2vh;
   }
+  img {
+    // z-index: 0;
+    // position: fixed;
+    width: 70%;
+
+  }
 }
 .photography__body {
+  // z-index: 1;
+  // position: relative;
+  background: $white;
   width: calc(100% - 12vw);
   display: flex;
   padding: 3vh 6vw;
