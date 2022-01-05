@@ -28,7 +28,7 @@ let works = [
     title: "Riders Co",
     image: nike,
     description: "Our goal is to create a seamless experience for users, from casual outdoor enthusiasts to seasoned veterans, a platform that will provide quick, user aggregated and curated destinations while integrating fitness tracking solutions that we all come to appreciate.",
-    link: "",
+    link: "/ride",
     isActive: true,
     color: "#82A7BE",
     position: "flex-end",
@@ -49,7 +49,7 @@ let works = [
     title: "Fashion Domino",
     image: fd,
     description: "Fashion Domino is the premium Los Angeles based Wholesale Fashion Marketplace that connects wholesale clothing, accessories, handbags, shoes and cosmetics manufacturers & distributors with buyers from across the USA and the whole globe.",
-    link: "",
+    link: "/fashiondomino",
     isActive: false,
     color: "#BE8290",
     position: "flex-start",
@@ -114,16 +114,16 @@ const Landing = () => {
       <section className="landing__works">
         <h2 className="header">Selected Works</h2>
         <div className="landing__works__container">
-            {/* { workList.map((work => {
-              return <div className="landing__works__main" style={{alignItems: `${work.position}`}}>
-                <div className="landing__work" style={{background: `${work.color}`}}>
-                  <img className="shadow" src={work.image} style={{left: `${work.img_position}`}}/>
-                  <h3>{work.title}</h3>
-                  <p>{work.description}</p>
-                  <Link className="roundbutton black space" to={work.link}>View Project</Link>
-              </div>
+          <div className="landing__works__main" >
+            { workList.map((work => {
+                return <div className="landing__work" style={{background: `${work.color}`}}>
+                <img className="shadow" src={work.image}/>
+                <h3>{work.title}</h3>
+                <p>{work.description}</p>
+                <Link className="roundbutton black space" to={work.link}>View Project</Link>
+            </div>
+            }))}
           </div>
-            }))} */}
           {/* {workList.map((work => {
             return <div className={`landing__works__main ${work.isActive ? "active" : ""}`}>
               <motion.img className={`works__hero ${work.isActive ? "hero-full" : "hero-shrunk"}`} src={work.image} alt="" onClick={() => changeView(work)}

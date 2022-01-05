@@ -65,7 +65,7 @@ const photos = [
     portraits: [
       {
         name: "bianca__roof",
-        links: [bianca__roof1, bianca__roof2, bianca__roof3],
+        links: ["https://ik.imagekit.io/breezy/Breezyblake/photography/DSC02317_f7GWhtu4KAR.jpg?updatedAt=1640908830344", bianca__roof2, bianca__roof3],
       },
       {
         name: "jackie__bell",
@@ -77,11 +77,16 @@ const photos = [
       },
       {
         name: "sophie__poarch",
-        links: [sophie__poarch1, sophie__poarch2, sophie__poarch3]
+        links: 
+        [
+        "https://ik.imagekit.io/breezy/Breezyblake/photography/DSC00929_JVtM2o0xOaqn.jpg?updatedAt=1640908829793", 
+        "https://ik.imagekit.io/breezy/Breezyblake/photography/DSC00976_DwpCMTdC5g.jpg?updatedAt=1640908829666", 
+        "https://ik.imagekit.io/breezy/Breezyblake/photography/DSC01004_dr3t91n1-R.jpg?updatedAt=1640908829784"
+        ]
       },
       {
         name: "salon",
-        links: [salon1, salon2, salon3]
+        links: [salon1, "https://ik.imagekit.io/breezy/Breezyblake/photography/DSC00602_0eEZ48uGYM7.jpg?updatedAt=1640908829671", salon3]
       },
       {
         name: "union__shoot",
@@ -109,15 +114,15 @@ const photos = [
       },
       {
         name: "chelsea__rooftop",
-        links: [chelsea__rooftop1, chelsea__rooftop2, chelsea__rooftop3]
+        links: [chelsea__rooftop1, chelsea__rooftop2, "https://ik.imagekit.io/breezy/Breezyblake/photography/DSC01308_yjxYQXmEGq.jpg?updatedAt=1640908829633"]
       },
       {
         name: "bianca__target",
-        links: [bianca__target1, bianca__target2, bianca__target3]
+        links: ["https://ik.imagekit.io/breezy/Breezyblake/photography/DSC09221_e0_VuPR2iC1.jpg?updatedAt=1640908829653", "https://ik.imagekit.io/breezy/Breezyblake/photography/DSC09422_GJGtfgtkD7lH.jpg?updatedAt=1640908829688", bianca__target3]
       },
       {
         name: "mens__mixed",
-        links: [aaron__bridge1, jonah_merc, bay__dtla]
+        links: [aaron__bridge1, "https://ik.imagekit.io/breezy/Breezyblake/photography/DSC04719_Vg-CXJdSF.jpg?updatedAt=1640908829714", bay__dtla]
       },
       {
         name: "church__mixed",
