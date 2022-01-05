@@ -114,7 +114,7 @@ const Landing = () => {
       <section className="landing__works">
         <h2 className="header">Selected Works</h2>
         <div className="landing__works__container">
-          <div className="landing__works__main" >
+          {/* <div className="landing__works__main" >
             { workList.map((work => {
                 return <div className="landing__work" style={{background: `${work.color}`}}>
                 <img className="shadow" src={work.image}/>
@@ -123,7 +123,7 @@ const Landing = () => {
                 <Link className="roundbutton black space" to={work.link}>View Project</Link>
             </div>
             }))}
-          </div>
+          </div> */}
           {/* {workList.map((work => {
             return <div className={`landing__works__main ${work.isActive ? "active" : ""}`}>
               <motion.img className={`works__hero ${work.isActive ? "hero-full" : "hero-shrunk"}`} src={work.image} alt="" onClick={() => changeView(work)}
