@@ -126,11 +126,11 @@ const photos = [
       },
       {
         name: "church__mixed",
-        links: [mel__chinatown ,mel__church, peak__church]
+        links: ["https://ik.imagekit.io/breezy/Breezyblake/photography/DSC09947_cfWDFyqmhp.jpg?updatedAt=1640908829704" ,mel__church, peak__church]
       },
       {
         name: "nichestreet",
-        links: [nichestreet1, nichestreet2, nichestreet3]
+        links: [nichestreet1, "https://ik.imagekit.io/breezy/Breezyblake/photography/DSC00124_FIccY6GcHS.jpg?updatedAt=1640908830060", "https://ik.imagekit.io/breezy/Breezyblake/photography/DSC06060_EdVEeaJKM.jpg?updatedAt=1640908829581"]
       },
       // {
       //   name: "amber__rave",
