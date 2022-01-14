@@ -1,6 +1,9 @@
 import React from 'react';
 import PhotoNav from './photoNav';
 import './photography.scss';
+import { IKImage } from 'imagekitio-react';
+const urlEndpoint = "https://ik.imagekit.io/breezy/"
+
 
 import photos from './photos';
 
@@ -54,7 +57,7 @@ const Photography = () => {
                 return <div className="row">
                   <div className="col">
                     {link.links.map((image, i) => {
-                      return <img src={image} alt={link.name} key={i}/>
+                      return <IKImage urlEndpoint={urlEndpoint} path={image} alt={link.name} key={i}/>
                     })}
                   </div>
                 </div>

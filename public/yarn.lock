@@ -7333,6 +7333,19 @@ ignore@^5.1.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
+imagekit-javascript@^1.3.6:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/imagekit-javascript/-/imagekit-javascript-1.4.3.tgz#34445192c6e9265707d58e9dedf4a162d2a7df73"
+  integrity sha512-2582LzgGl2x0LghhhCXt6xNAss/Rkih1ABbC/eFLgEo2rRq6+LMna/OZyy39wL7t7wW06kxxAGRahX9uE+qfuQ==
+
+imagekitio-react@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/imagekitio-react/-/imagekitio-react-1.1.0.tgz#84301a7b03115c7a434f1e9892a904ec1a5aee9f"
+  integrity sha512-e2mrqgIBLP7zZUBme0ZoCsY/EC6KldNYjs2DhgjSd6T6P06Nvf9+l5Pb6xGrE26m+yIPmF8d+W1zn2rToT/8qw==
+  dependencies:
+    imagekit-javascript "^1.3.6"
+    prop-types "^15.7.2"
+
 imagemin-webp@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/imagemin-webp/-/imagemin-webp-6.0.0.tgz#bb2d77bab818fd6133df9675326497b877e7be4d"
