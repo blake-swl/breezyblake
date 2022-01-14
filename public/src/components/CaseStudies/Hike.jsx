@@ -2,11 +2,13 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './case.scss';
 
+import { IKImage } from 'imagekitio-react';
+const urlEndpoint = "https://ik.imagekit.io/breezy/";
 
-import banner from '../../../dist/assets/works/riderco/hike.jpg'
-// import styleguide from '../../../dist/assets/works/riderco/styleguide.jpg'
-import stills from '../../../dist/assets/works/riderco/stills.jpg'
-import screencap from '../../../dist/assets/works/riderco/screencap.jpg'
+const banner = "https://ik.imagekit.io/breezy/Breezyblake/riderco/hike_f4z8aKDgYJ1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642131946382"
+const styleguide = "https://ik.imagekit.io/breezy/Breezyblake/riderco/Styleguide_m2BL8R5gF.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642131941506"
+const stills = "https://ik.imagekit.io/breezy/Breezyblake/riderco/stills_7_HRI46gG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642131943738"
+const screencap = "https://ik.imagekit.io/breezy/Breezyblake/riderco/screencap_2CGFET6ko.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642131943863"
 
 const Hike = () => {
   return (
@@ -65,7 +67,7 @@ const Hike = () => {
           </div>
         </div>
       </div>
-      {/* <div className="case-photo second" style={{background: `url(${styleguide}) 50% 50%`, backgroundSize: 'cover'}}> </div> */}
+      <div className="case-photo second" style={{background: `url(${styleguide}) 50% 50%`, backgroundSize: 'cover'}}> </div>
       <div className="case-photo second" style={{background: `url(${screencap}) 50% 50%`, backgroundSize: 'cover'}}> </div>
 
       {/* <div className="case-summary container">

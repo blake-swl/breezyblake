@@ -15,6 +15,8 @@ import fd from '../../../dist/assets/works/fashiondomino.jpg';
 import ride from '../../../dist/assets/ride.jpg';
 import hair from '../../../dist/assets/works/hair.jpg';
 
+import { IKImage } from 'imagekitio-react';
+const urlEndpoint = "https://ik.imagekit.io/breezy/"
 import halloween from '../../../dist/assets/works/mockups/universal.jpg'
 import blogpost from '../../../dist/assets/works/mockups/blogpost.jpg'
 // import dodgers from '../../../dist/assets/works/mockups/dodgers.jpg'
@@ -44,12 +46,12 @@ const works = [
     description: "Our goal is to create a seamless experience for users, from casual outdoor enthusiasts to seasoned veterans, a platform that will provide quick, user aggregated and curated destinations while integrating fitness tracking solutions that we all come to appreciate.",
     link: "/ride"
   },
-  {
-    title: "One 2 One Salon Shoot",
-    image: hair,
-    // description: "At Fashion Domino, we prioritized efficiency and qua",
-    link: "/one2one"
-  },
+  // {
+  //   title: "One 2 One Salon Shoot",
+  //   image: hair,
+  //   // description: "At Fashion Domino, we prioritized efficiency and qua",
+  //   link: "/one2one"
+  // },
 ]
 
 
@@ -86,12 +88,12 @@ const Works = () => {
         <div className="caseMockups">
           <h1 className='header works'>Mockups</h1>
           <ul className="caseMockups__grid">
-            <img src={halloween} alt="" />
-            <img src={blogpost} alt="" />
-            {/* <img src={dodgers} alt="" /> */}
-            <img src={gloves} alt="" />
-            <img src={nishimenu} alt="" />
-            <img src={hike} alt="" />
+            <IKImage path={"Breezyblake/mockups/universal_CZ5ekCi7oJg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642121167781"} alt="" urlEndpoint={urlEndpoint}/>
+            <IKImage path={"Breezyblake/mockups/blogpost_UHKnZgcoB.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642121168025"} alt="" urlEndpoint={urlEndpoint}/>
+            <IKImage path={"Breezyblake/mockups/dodgers_PgRWtS3li.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642121168066"} alt="" urlEndpoint={urlEndpoint}/>
+            <IKImage path={"Breezyblake/mockups/gloves_-Dl4jeTRu.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642121166675"} alt="" urlEndpoint={urlEndpoint}/>
+            <IKImage path={"Breezyblake/mockups/nishimenu_KYmCqvGrcn.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642121168055"} alt="" urlEndpoint={urlEndpoint}/>
+            <IKImage path={"Breezyblake/mockups/hike_dEP5a422A.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642121168069"} alt="" urlEndpoint={urlEndpoint}/>
           </ul>
         </div>
       </SwiperSlide>
