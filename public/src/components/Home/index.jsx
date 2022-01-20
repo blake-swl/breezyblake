@@ -4,18 +4,14 @@ import { AnimateSharedLayout, motion } from "framer-motion"
 import ReactPlayer from 'react-player'
 import './home.scss';
 
-// assets
-import ramen from '../../../dist/assets/works/tako_main.jpg';
-import fd from '../../../dist/assets/works/fds_banner.jpg';
-import nike from '../../../dist/master/yose.jpg'
-import salonshoot from '../../../dist/assets/works/DSC00602wide.jpg';
-import reel from '../../../dist/assets/photography/DSC01329-Enhanced.jpg';
+import { IKImage } from 'imagekitio-react';
+const urlEndpoint = "https://ik.imagekit.io/breezy/"
 
 let works = [
   {
     id: 1,
     title: "Tako Poke + Ramen",
-    image: ramen,
+    image: "Breezyblake/media/tako_main_KzWx3o7e3wK.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642656188975",
     link: "/takopokeramen",
     isActive: false,
     description: "branding, photography, web"
@@ -23,7 +19,7 @@ let works = [
   {
     id: 2,
     title: "Fashion Domino",
-    image: fd,
+    image: "Breezyblake/media/fds_banner_q7JgoVrngSZ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642656190668",
     link: "/fashiondomino",
     isActive: false,
     description: "graphic design, strategy"
@@ -31,7 +27,7 @@ let works = [
   {
     id: 3,
     title: "Riders Co",
-    image: nike,
+    image: "Breezyblake/media/yose_HqkgdFyiK.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642656190046",
     link: "/ride",
     isActive: true,
     description: "branding, design, web"
@@ -39,7 +35,7 @@ let works = [
   {
     id: 4,
     title: "Oribe Hair Competition",
-    image: salonshoot,
+    image: "Breezyblake/media/DSC00602wide_SGypNIM2O.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642656188778",
     link: "/one2one",
     isActive: false,
     description: "photography"
@@ -93,7 +89,7 @@ const Landing = () => {
           <br/>design & technology </h2>
           <div className="landing__reel__container">
             <ReactPlayer url="https://youtu.be/lTxhrEpZ4r0"
-              light={reel} 
+              light={"https://ik.imagekit.io/breezy/Breezyblake/photography/DSC01329-Enhanced_doOuQFB1cC.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1640908830080"} 
               controls={false}
               width="100%"
               height="75%"
@@ -108,7 +104,7 @@ const Landing = () => {
             { workList.map((work => {
                 return <div className="landing__work">
                 <Link to={work.link} className="image__zoom">
-                  <img src={work.image}/>
+                  <IKImage path={work.image} urlEndpoint={urlEndpoint}/>
                 </Link>
                 <div className="landing__text">
                   <h3>{work.title}</h3>
@@ -134,51 +130,3 @@ const Landing = () => {
 };
 
 export default Landing;
-
-        {/* {
-              workList.map((work) => {
-               return (
-                <motion.div layout className={`landing__works__main ${work.isActive ? "active" : ""}`} 
-                  animate={{width: ["0px", "600px"]}}
-                >
-                  <motion.img src={work.image} className={`works__hero ${work.isActive ? "hero-full" : "hero-shrunk"}`} onClick={() => changeView(work)} type="button"
-                  />
-                  <motion.div className="landing__works__copy" animate={{opacity: 1}}>
-                    <h3>{work.title}</h3>
-                    <p>{work.description}</p>
-                    <Link className="roundbutton black space" to={`${work.link}`}>
-                      View Project
-                    </Link>
-                  </motion.div>
-                </motion.div>)
-              })
-            } */}
-          {/* <Link className="landing__cta cta">
-            <span>View my work</span>
-            <svg width="13px" height="10px" viewBox="0 0 13 10">
-              <path d="M1,5 L11,5"></path>
-              <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
-          </Link> */}
-
-                    {/* <div className="landing__works__main">
-              <img src={nike} alt="" className="works__hero"/>
-            </div>
-            <div className="landing__works__main full">
-              <img src={ramen} alt="" className="works__hero"/>
-              <div className="landing__works__copy">
-                <h3>Tako Poke Ramen</h3>
-                <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                </p>
-                <Link className="roundbutton black space" to={""}>
-                  View Project
-                </Link>
-              </div>
-            </div>
-            <div className="landing__works__main">
-              <img src={salonshoot} alt="" className="works__hero"/>
-            </div>
-            <div className="landing__works__main">
-              <img src={fd} alt="" className="works__hero"/>
-            </div> */}
