@@ -52,12 +52,12 @@ const bianca__rose3 = "Breezyblake/photography/DSC01390_zWNvPjrOy.jpg?updatedAt=
 
 
 // aerial
-import lighthouse from '../../../dist/assets/photography/DJI_0978-HDR-Pano.jpg'
-import dodgerstadium from '../../../dist/assets/photography/DJI_0918-HDR-Pano.jpg'
-import echopark from '../../../dist/assets/photography/DJI_0819-Pano.jpg'
-import santamonica from '../../../dist/assets/photography/DJI_0281-Pano.jpg'
-import downtown_le from '../../../dist/assets/photography/DJI_0068-HDR-Pano.jpg'
-import downtown_eastern from '../../../dist/assets/photography/DJI_0363-HDR-Pano.jpg'
+// import lighthouse from '../../../dist/assets/photography/DJI_0978-HDR-Pano.jpg'
+// import dodgerstadium from '../../../dist/assets/photography/DJI_0918-HDR-Pano.jpg'
+// import echopark from '../../../dist/assets/photography/DJI_0819-Pano.jpg'
+// import santamonica from '../../../dist/assets/photography/DJI_0281-Pano.jpg'
+// import downtown_le from '../../../dist/assets/photography/DJI_0068-HDR-Pano.jpg'
+// import downtown_eastern from '../../../dist/assets/photography/DJI_0363-HDR-Pano.jpg'
 
 const urlEndpoint = "https://ik.imagekit.io/breezy/"
 
@@ -138,16 +138,16 @@ const photos = [
       //   links: [amber__rave1, amber__rave2, amber__rave3]
       // },
     ],
-    aerial: [
-      {
-        name: "row1",
-        links: [lighthouse, dodgerstadium, downtown_le]
-      },
-      {
-        name: "row2",
-        links: [downtown_eastern, santamonica, echopark]
-      },
-    ]
+    // aerial: [
+    //   {
+    //     name: "row1",
+    //     links: [lighthouse, dodgerstadium, downtown_le]
+    //   },
+    //   {
+    //     name: "row2",
+    //     links: [downtown_eastern, santamonica, echopark]
+    //   },
+    // ]
   },
 ];
 

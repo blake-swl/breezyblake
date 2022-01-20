@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { TweenMax, Circ } from 'gsap';
 
 // const skate = 'https://breezyyblake.s3-us-west-1.amazonaws.com/DSC04878.jpg';
-import skate from '../../../dist/assets/photography/2021-07-10-MKVZ9608-Yosemite.jpg'
+// import skate from '../../../dist/assets/photography/2021-07-10-MKVZ9608-Yosemite.jpg'
 
 
 const Menu = (props) => {
@@ -30,7 +30,7 @@ const Menu = (props) => {
           </ul>
         </div>
         <div className="menu__contacts">
-          <img src={skate} alt=""/>
+          {/* <img src={skate} alt=""/> */}
           <div>breezyyblake@gmail.com</div>
           <div>(323)482-0091</div>
         </div>
