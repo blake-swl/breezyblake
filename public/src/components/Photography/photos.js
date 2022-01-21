@@ -65,8 +65,18 @@ const photos = [
   {
     portraits: [
       {
+        name: "soph__pier",
+        links: [
+          "Breezyblake/photography/A7303834_swt58JgfCbG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642731146175", 
+          "Breezyblake/photography/A7303878_aHDYpwnB6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642731146205", 
+          "Breezyblake/photography/A7303908_CpSnEOIEI.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642731146172"],
+      },
+      {
         name: "bianca__roof",
-        links: ["Breezyblake/photography/DSC02317_f7GWhtu4KAR.jpg", "Breezyblake/photography/DSC02254_LeHJB_6ceu.jpg", "Breezyblake/photography/DSC02413_fNZfWuCq_u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1640908830275"],
+        links: [
+          "Breezyblake/photography/DSC02317_f7GWhtu4KAR.jpg", 
+          "Breezyblake/photography/DSC02254_LeHJB_6ceu.jpg", 
+          "Breezyblake/photography/DSC02413_fNZfWuCq_u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1640908830275"],
       },
       {
         name: "jackie__bell",
