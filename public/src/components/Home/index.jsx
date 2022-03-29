@@ -9,6 +9,14 @@ const urlEndpoint = "https://ik.imagekit.io/breezy/"
 
 let works = [
   {
+    id: 5,
+    title: "Very J",
+    image: "Breezyblake/veryj/movint_banner3_i8g3G6zmK.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1648529297657",
+    link: "/veryj",
+    isActive: false,
+    description: "photography, graphic design"
+  },
+  {
     id: 1,
     title: "Tako Poke + Ramen",
     image: "Breezyblake/media/tako_main_KzWx3o7e3wK.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642656188975",
@@ -24,14 +32,14 @@ let works = [
     isActive: false,
     description: "graphic design, strategy"
   },
-  {
-    id: 3,
-    title: "Riders Co",
-    image: "Breezyblake/media/yose_HqkgdFyiK.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642656190046",
-    link: "/ride",
-    isActive: true,
-    description: "branding, design, web"
-  },
+  // {
+  //   id: 3,
+  //   title: "Riders Co",
+  //   image: "Breezyblake/media/yose_HqkgdFyiK.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642656190046",
+  //   link: "/ride",
+  //   isActive: true,
+  //   description: "branding, design, web"
+  // },
   {
     id: 4,
     title: "Oribe Hair Competition",

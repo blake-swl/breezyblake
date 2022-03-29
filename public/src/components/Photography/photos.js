@@ -65,6 +65,13 @@ const photos = [
   {
     portraits: [
       {
+        name: "bianca__row",
+        links: [
+          "Breezyblake/photography/DSC09046_8M3uRjwSj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1648529759420", 
+          "Breezyblake/photography/DSC08717-HDR_Lnt5LFHFG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1648529759674", 
+          "Breezyblake/photography/DSC08914-HDR_T8h6cD6m1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1648529759572"],
+      },
+      {
         name: "soph__pier",
         links: [
           "Breezyblake/photography/A7303834_swt58JgfCbG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642731146175", 

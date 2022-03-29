@@ -12,16 +12,9 @@ import SwiperCore, {
 // assets
 import ramen from '../../../dist/banners/tako.jpg';
 import fd from '../../../dist/assets/works/fashiondomino.jpg';
-import ride from '../../../dist/assets/ride.jpg';
-import hair from '../../../dist/assets/works/hair.jpg';
 
 import { IKImage } from 'imagekitio-react';
 const urlEndpoint = "https://ik.imagekit.io/breezy/"
-import halloween from '../../../dist/assets/works/mockups/universal.jpg'
-import blogpost from '../../../dist/assets/works/mockups/blogpost.jpg'
-// import dodgers from '../../../dist/assets/works/mockups/dodgers.jpg'
-import gloves from '../../../dist/assets/works/mockups/gloves.jpg'
-import nishimenu from '../../../dist/assets/works/mockups/nishimenu.jpg'
 import hike from '../../../dist/assets/works/mockups/hike.jpg'
 
 

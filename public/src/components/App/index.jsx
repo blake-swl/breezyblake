@@ -18,6 +18,8 @@ import Hike from '../CaseStudies/Hike'
 import Temp from '../Temporary';
 import Fashion_domino from '../CaseStudies/Fashion_domino.jsx';
 import one2one from '../CaseStudies/one2one.jsx';
+import veryj from '../CaseStudies/veryj.jsx';
+
 
 // const routes = [
 //   {path: '/', Component: Home},
@@ -38,6 +40,8 @@ const routes = [
   {path: '/fashiondomino', name: 'Fashion Domino', Component: Fashion_domino},
   {path: '/ride', name: 'Riders Co.', Component: Hike},
   {path: '/one2one', name: 'One 2 One Salon Shoot', Component: one2one},
+  {path: '/veryj', name: 'Very J', Component: veryj},
+
 ]
 
 
